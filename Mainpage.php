@@ -1,8 +1,10 @@
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfomobilmeister</title>
     <link rel="icon" href="logo_bild.jpg">
-    <link rel="stylesheet" href="Mainpage.css">
+    <link rel="stylesheet" href="MainpageCSS/Mainpage.css">
 
 </head>
 

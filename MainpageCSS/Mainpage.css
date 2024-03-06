@@ -1,0 +1,131 @@
+body {
+    width: 98vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+}
+
+#nav-bar-logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav-bar {
+
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.logo {
+    padding-left: 0;
+}
+
+.menu-punkte {
+    text-align: center; /* Zentriere die Links horizontal */
+    display: flex; /*damit links am richtigen ort stehen*/
+    width: 40%;
+    margin-left: auto; /*das div wird ganz links plaziert*/
+    align-items: center; /* Zentriere den Inhalt vertikal */
+    justify-content: space-around; /*links bekommen alle den gleichen abstand*/
+}
+
+.menu-punkte a {
+    display: inline-block; /* Stelle sicher, dass die Links nebeneinander stehen */
+    margin: 0 10px; /* Füge horizontalen Abstand zwischen den Links hinzu */
+}
+
+#container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.title-bar {
+    display: flex;
+    align-items: stretch;
+    margin-top: 100px;
+    height: 800px;
+}
+
+.title {
+    width: 40%;
+    align-self: center;
+}
+
+.title-img-div {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pre-title {
+    font-family: Courier, monospace;
+    font-size: 20px;
+}
+
+#title {
+    margin: 0;
+    font-family: Luminari, fantasy;
+    font-size: 100px;
+}
+
+#title-text {
+    font-family: Courier, monospace;
+    font-size: 20px;
+}
+
+#title-img {
+    width: auto;
+    height: 750px;
+    border-radius: 10px;
+}
+
+#button-div {
+    z-index: 2;
+}
+
+#title-button {
+    background-color: #5f3ddc;
+    color: white;
+    border: 1px solid #5f3ddc;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#title-button:hover {
+    background-color: white;
+    color: #5f3ddc;
+}
+
+#info-project {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#info-project-title {
+    display: inline-block;
+    font-family: Luminari, fantasy;
+    color: #5f3ddc;
+    font-size: 25px;
+}
+
+#info-projct-text {
+    display: inline-block;
+    width: 70%;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
