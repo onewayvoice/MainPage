@@ -103,3 +103,107 @@ body {
     font-family: Courier, monospace;
     font-weight: bold;
 }
+
+/*-------------------------------*/
+#erfolge-top {
+    margin-top: 250px;
+}
+
+#erfolge-bottom {
+    margin-top: 70px;
+}
+
+#erfolge-top, #erfolge-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
+    display: flex;
+    /*justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+}
+
+.svg-container {
+    flex: 0 0 auto; /* Verhindere, dass das SVG wächst */
+}
+
+.svg-image {
+    width: 150px; /* Ändere die Größe des SVG-Bildes */
+    height: auto; /* Halte das Seitenverhältnis beibehalten */
+    margin: 10px;
+}
+
+.text-container {
+    width: auto;
+}
+
+.title {
+    font-family: Luminari, fantasy;
+    color: #5f3ddc;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.word {
+    margin-top: 0; /* Entferne Standard-Margin von <p> */
+    display: inline-block;
+    width: 70%;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*-----------------------------------------*/
+
+footer {
+    margin-top: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+}
+
