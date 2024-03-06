@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.begin {
+    background-color: #5f3ddc;
+    height: 50vh;
+    width: 50vw;
+}
