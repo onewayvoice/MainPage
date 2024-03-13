@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfomobilmeister</title>
-    <link rel="icon" href="../../Navbar/NavbarBilder/logo_bild.jpg">
-    <link rel="stylesheet" href="../MainpageCSS/Mainpage.css">
-    <link rel="stylesheet" href="../../Navbar/NavbarCSS/navbar.css">
+    <link rel="icon" href="../Navbar/NavbarBilder/logo_bild.jpg">
+    <link rel="stylesheet" href="MainpageCSS/Mainpage.css">
+    <link rel="stylesheet" href="../Navbar/NavbarCSS/navbar.css">
 
 </head>
 
@@ -13,13 +13,13 @@
     <div class="nav-bar">
         <div class="logo"><!-- logo eini tian -->
             <a href="Mainpage.php">
-                <img id="nav-bar-logo" src="../MainpageBilder/nav_bar_logo.PNG" alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
+                <img id="nav-bar-logo" src="MainpageBilder/nav_bar_logo.PNG" alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
             </a>
         </div>
         <div class="menu-punkte"><!-- navigations punkte -->
             <a href="">Golfcar</a>
             <a href="">Sponsor</a>
-            <a href="../../Teampage/TeampageWebsites/Teampage.php">Team</a>
+            <a href="../Teampage/Teampage.php">Team</a>
             <a href="" target="_blank">Tagebuch</a>
         </div>
     </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="title-img-div">
-                <img id="title-img" src="../MainpageBilder/preview_hochkant.jpg" alt="text">
+                <img id="title-img" src="MainpageBilder/preview_hochkant.jpg" alt="text">
             </div>
         </div>  <!-- titel und 'erste' anzeige mit bild und mini text-->
 
@@ -63,7 +63,7 @@
         <div id="erfolge-top">
             <div class="erfolge-geld">
                 <div class="svg-container">
-                    <img class="svg-image" src="../MainpageSVG/money-cash.svg" alt="SVG">
+                    <img class="svg-image" src="MainpageSVG/money-cash.svg" alt="SVG">
                 </div>
                 <div class="text-container">
                     <h2 class="title">Budget</h2>
@@ -72,7 +72,7 @@
             </div>
             <div class="erfolge-zeit">
                 <div class="svg-container">
-                    <img class="svg-image" src="../MainpageSVG/stopwatch.svg" alt="SVG">
+                    <img class="svg-image" src="MainpageSVG/stopwatch.svg" alt="SVG">
                 </div>
                 <div class="text-container">
                     <h2 class="title">Time</h2>
@@ -81,7 +81,7 @@
             </div>
             <div class="erfolge-errors">
                 <div class="svg-container">
-                    <img class="svg-image" src="../MainpageSVG/not-found-error-alert.svg" alt="SVG">
+                    <img class="svg-image" src="MainpageSVG/not-found-error-alert.svg" alt="SVG">
                 </div>
                 <div class="text-container">
                     <h2 class="title">Errors</h2>
@@ -92,7 +92,7 @@
         <div id="erfolge-bottom">
             <div class="erfolge-success">
                 <div class="svg-container">
-                    <img class="svg-image" src="../MainpageSVG/success.svg" alt="SVG">
+                    <img class="svg-image" src="MainpageSVG/success.svg" alt="SVG">
                 </div>
                 <div class="text-container">
                     <h2 class="title">Milestones</h2>
@@ -101,7 +101,7 @@
             </div>
             <div class="erfolge-coffee">
                 <div class="svg-container">
-                    <img class="svg-image" src="../MainpageSVG/coffee-cup.svg" alt="SVG">
+                    <img class="svg-image" src="MainpageSVG/coffee-cup.svg" alt="SVG">
                 </div>
                 <div class="text-container">
                     <h2 class="title">Coffee.Brakes</h2>
@@ -151,5 +151,5 @@
         &copy; 2024 MyWebsite | Designed by Me
     </div>
 </footer>
-<script src="../MainpageJS/Mainpage.js"></script>
+<script src="MainpageJS/Mainpage.js"></script>
 </html>
