@@ -1,15 +1,105 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+/* Apply font family */
 body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #333;
+    background: #fff; /* Assuming a white background; change if needed */
     margin: 0;
     padding: 0;
 }
 
+.container-unternehmen {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 10% 0 10%;
+    padding: 10px;
+}
 
-.begin {
-    background-color: #5f3ddc;
-    height: 50vh;
-    width: 50vw;
+/* Breadcrumbs styles */
+.breadcrumbs {
+    position: relative;
+    left: 195px;
+    top: 220px;
+    font-size: 0.9rem;
+    margin-bottom: 24px; /* Space between breadcrumbs and title */
+    color: #6c757d; /* Assuming a grey color; change if needed */
+}
+
+.breadcrumbs li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumbs a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.breadcrumbs a:after {
+    content: '>';
+    margin-left: 5px;
+}
+
+.breadcrumbs a:last-child:after {
+    content: '';
+}
+
+/* Smartphones (Portrait und Landscape) */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .unternehmenswerte, .bild-container {
+        width: 100%;
+        margin: 0 auto; /* Zentriert die Inhalte */
+    }
+
+    .breadcrumbs {
+        left: 10px;
+        top: 120px;
+        font-size: 0.8rem; /* Verkleinert die Schriftgröße für Breadcrumbs */
+    }
+}
+
+/* Tablets (Portrait und Landscape) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .unternehmenswerte, .bild-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .breadcrumbs {
+        left: 10px;
+        top: 150px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 901px) {
+    /* Beibehalten der Standard-Styles, eventuell leichte Anpassungen */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px; /* Kleinere Schriftgröße für Mobilgeräte */
+    }
 }

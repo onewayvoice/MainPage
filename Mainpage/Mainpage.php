@@ -24,7 +24,6 @@
         </div>
     </div>
     <div id="container">
-
         <div class="title-bar"> <!-- titel mini text & erstes bild drinnen -->
             <div class="title">
                 <p id="pre-title">WELCOME TO THE PROJECT</p>
