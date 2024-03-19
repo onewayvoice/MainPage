@@ -10,10 +10,12 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <div class="nav-bar">
-    <div class="logo"><!-- logo eini tian -->
+    <div class="logo">
         <a href="../Mainpage/Mainpage.php">
-            <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG" alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
+            <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG"
+                 alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
@@ -25,10 +27,29 @@
 
 </div>
 
+<!-- Breadcrumb -->
+<nav class="breadcrumbs" id="teamPageBreadCrumb">
+    <a href="#">Startseite</a>
+    <a href="#" style="font-weight: bold">Unternehmen</a>
+</nav>
 
-<div class="begin">
-    <h2> Unsere Unternehmenswerte </h2>
+<!-- Unternehmenswerte -->
+<div class="container">
+    <div class="unternehmenswerte" id="teamwerte">
+        <h2>Unsere<br>Unternehmenswerte</h2>
+        <p>Wir schaffen Mehrwert für unsere Kunden.</p>
+        <p>Wir arbeiten sicher.</p>
+        <p>Wir geben Vertrauen und Wertschätzung.</p>
+        <p>Wir sind nachhaltig.</p>
+    </div>
+
+    <div class="bild-container" id="teambild">
+        <img src="photo.png" alt="Bildbeschreibung" width="770" height="420">
+    </div>
 </div>
+
+<!-- Teammitglieder -->
+
 
 
 </body>
