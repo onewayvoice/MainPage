@@ -53,6 +53,7 @@ body {
 #title-text {
     font-family: Courier, monospace;
     font-size: 20px;
+    color: black;
 }
 
 #title-img {
@@ -155,7 +156,7 @@ body {
     font-size: 25px;
 }
 
-/*-----------------------------------------*/
+/* FOOTER CSS */
 
 footer {
     margin-top: 250px;
