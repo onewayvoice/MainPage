@@ -16,7 +16,7 @@ body {
     padding: 0;
 }
 
-.container-unternehmen {
+.container {
     display: flex;
     max-width: 100%;
     height: auto;
