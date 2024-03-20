@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="menu-punkte"><!-- navigations punkte -->
-            <a href="">Golfcar</a>
+            <a href="../Golfocar/Goflcar.php">Golfcar</a>
             <a href="">Sponsor</a>
             <a href="../Teampage/Teampage.php">Team</a>
             <a href="" target="_blank">Tagebuch</a>
@@ -139,10 +139,9 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Golfcar</a></li>
-                <li><a href="#">Sponsor</a></li>
+                <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
                 <li><a href="#">Team</a></li>
-                <li><a href="#">Tagebuch</a></li>
+                <li><a href="#" target="_blank">Tagebuch</a></li>
             </ul>
         </div>
     </div>
