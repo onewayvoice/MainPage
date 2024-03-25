@@ -8,6 +8,8 @@
 /* Apply font family */
 body {
     font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
     line-height: 1.6;
     font-size: 20px;
     color: #333;
@@ -29,6 +31,7 @@ body {
 /* Breadcrumbs styles */
 .breadcrumbs {
     position: relative;
+    max-width: 80%;
     left: 195px;
     top: 220px;
     font-size: 0.9rem;
@@ -101,5 +104,44 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 18px; /* Kleinere Schriftgröße für Mobilgeräte */
+    }
+}
+
+.team-mitglied {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem; /* Abstand zwischen Teammitgliedern */
+    max-width: 960px; /* Maximale Breite des Blocks */
+    margin-left: auto; /* Horizontal zentriert */
+    margin-right: auto; /* Horizontal zentriert */
+}
+
+.team-mitglied-bild {
+    border-radius: 50%; /* Kreisförmiges Bild */
+    width: 150px; /* Bildbreite */
+    height: 150px; /* Bildhöhe */
+    margin-right: 1.5rem; /* Abstand zwischen Bild und Beschreibung */
+    object-fit: cover; /* Sorgt dafür, dass das Bild das Element vollständig ausfüllt */
+}
+
+.team-mitglied-info {
+    flex: 1;
+}
+
+.team-mitglied-rolle {
+    font-weight: bold; /* Hebt die Rolle hervor */
+    margin-bottom: .5rem; /* Abstand zwischen Rolle und Beschreibung */
+}
+
+@media only screen and (max-width: 600px) {
+    .team-mitglied {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%; /* Ermöglicht eine volle Breite auf kleinen Bildschirmen */
+    }
+
+    .team-mitglied-bild {
+        margin-bottom: 1rem; /* Abstand zwischen Bild und Beschreibung auf mobilen Geräten */
     }
 }
