@@ -34,7 +34,7 @@
                     heroes of transportation grace. So, let's putt-putt our way to a smoother world, one cart at a time!
                 </p>
                 <div id="button-div">
-                    <button id="title-button">Get in Touch</button>   <!-- um später zum kontakt formular zu kommen / maybee socials zu verlinken -->
+                    <button onclick="scrollToBottom()" id="title-button">Get in Touch</button>   <!-- um später zum kontakt formular zu kommen / maybee socials zu verlinken -->
                 </div>
             </div>
             <div class="title-img-div">
