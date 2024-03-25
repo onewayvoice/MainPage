@@ -49,7 +49,15 @@
 </div>
 
 <!-- Teammitglieder -->
-
+<div class="team-mitglied">
+    <img src="TeampageBilder/Miggi.jpg" alt="MIGUEL ANGEL GASSER" class="team-mitglied-bild">
+    <div class="team-mitglied-info">
+        <h3>Miguel Angel Gasser</h3>
+        <p class="team-mitglied-rolle">Webdesigner</p>
+        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahrelange Erfahrung im Bereich der Websiten entwicklung
+            war einer der Hauptgründe, dass wir die Website fertig stellen konnten.</p>
+    </div>
+</div>
 
 
 </body>
