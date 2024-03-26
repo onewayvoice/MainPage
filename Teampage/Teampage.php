@@ -20,7 +20,6 @@
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
         <a href="">Golfcar</a>
-        <a href="">Sponsor</a>
         <a href="">Team</a>
         <a href="" target="_blank">Tagebuch</a>
     </div>
@@ -28,14 +27,14 @@
 </div>
 
 <!-- Breadcrumb -->
-<nav class="breadcrumbs" id="teamPageBreadCrumb">
-    <a href="#">Startseite</a>
-    <a href="#" style="font-weight: bold">Unternehmen</a>
+<nav class="breadcrumb" id="teamPageBreadCrumb">
+    <a href="../Mainpage/Mainpage.php">Startseite</a>
+    <a href="" style="font-weight: bold">Unternehmen</a>
 </nav>
 
 <!-- Unternehmenswerte -->
 <div class="container">
-    <div class="unternehmenswerte" id="teamwerte">
+    <div>
         <h2>Unsere<br>Unternehmenswerte</h2>
         <p>Wir schaffen Mehrwert für unsere Kunden.</p>
         <p>Wir arbeiten sicher.</p>
@@ -50,12 +49,41 @@
 
 <!-- Teammitglieder -->
 <div class="team-mitglied">
-    <img src="TeampageBilder/Miggi.jpg" alt="MIGUEL ANGEL GASSER" class="team-mitglied-bild">
+    <img src="Matthi.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <div class="team-mitglied-info">
+        <h3>Matthias Zelger</h3>
+        <p class="team-mitglied-rolle">Projektleiter</p>
+        <p>*Irgenda Text*</p>
+    </div>
+</div>
+
+<div class="team-mitglied">
+    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
     <div class="team-mitglied-info">
         <h3>Miguel Angel Gasser</h3>
         <p class="team-mitglied-rolle">Webdesigner</p>
-        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahrelange Erfahrung im Bereich der Websiten entwicklung
-            war einer der Hauptgründe, dass wir die Website fertig stellen konnten.</p>
+        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
+            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+    </div>
+</div>
+
+<div class="team-mitglied">
+    <img src="Vid.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <div class="team-mitglied-info">
+        <h3>David Erlacher</h3>
+        <p class="team-mitglied-rolle">Automechaniker</p>
+        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
+            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+    </div>
+</div>
+
+<div class="team-mitglied">
+    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <div class="team-mitglied-info">
+        <h3>Daniel Stocker</h3>
+        <p class="team-mitglied-rolle">Webdesigner</p>
+        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
+            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
     </div>
 </div>
 

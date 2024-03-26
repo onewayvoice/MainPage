@@ -3,24 +3,29 @@
 }
 
 body {
-    width: 98vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    font-family: Arial, sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 #container {
     margin: 0 auto;
-    width: 60%;
+    max-width: 1200px; /* Maximalbreite für große Bildschirme */
+    width: 100%; /* Flexibilität für kleinere Bildschirme */
+    padding: 20px;
 }
 
+/* Responsive Titel-Bar mit Flexbox */
 .title-bar {
     display: flex;
-    align-items: stretch;
-    margin-top: 100px;
-    height: 800px;
+    flex-wrap: wrap; /* Ermöglicht das Umfließen auf kleineren Bildschirmen */
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .title {
@@ -37,6 +42,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.title, .title-img-div {
+    flex: 1 1 50%; /* Flexibilität, um auf kleineren Bildschirmen 50% zu nutzen */
 }
 
 #pre-title {
@@ -208,3 +217,24 @@ footer {
     border-top: 1px solid #777;
 }
 
+@media (max-width: 768px) {
+    .title, .title-img-div {
+        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 10px;
+    }
+
+    .title-bar {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #container {
+        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
+    }
+}

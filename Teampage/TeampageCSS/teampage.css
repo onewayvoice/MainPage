@@ -11,7 +11,6 @@ body {
     width: 100vw;
     height: 100vh;
     line-height: 1.6;
-    font-size: 20px;
     color: #333;
     background: #fff; /* Assuming a white background; change if needed */
     margin: 0;
@@ -21,6 +20,7 @@ body {
 .container {
     display: flex;
     max-width: 100%;
+    font-size: 20px;
     height: auto;
     justify-content: space-between;
     align-items: center;
@@ -28,98 +28,58 @@ body {
     padding: 10px;
 }
 
-/* Breadcrumbs styles */
-.breadcrumbs {
-    position: relative;
-    max-width: 80%;
-    left: 195px;
-    top: 220px;
-    font-size: 0.9rem;
-    margin-bottom: 24px; /* Space between breadcrumbs and title */
-    color: #6c757d; /* Assuming a grey color; change if needed */
+
+.breadcrumb {
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    padding: 8px 15px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 
-.breadcrumbs li {
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\00a0/\00a0"; /* Fügt ein Leerzeichen vor und nach dem Trennzeichen hinzu */
+    color: #6c757d;
+}
+
+.breadcrumb li {
     display: inline;
     margin-right: 5px;
 }
 
-.breadcrumbs a {
+.breadcrumb a {
     font-size: 15px;
     text-decoration: none;
 }
 
-.breadcrumbs a:after {
-    content: '>';
+.breadcrumb a:after {
+    content: '> ';
     margin-left: 5px;
 }
 
-.breadcrumbs a:last-child:after {
+.breadcrumb a:last-child:after {
     content: '';
-}
-
-/* Smartphones (Portrait und Landscape) */
-@media only screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-        margin: 5%;
-    }
-
-    .unternehmenswerte, .bild-container {
-        width: 100%;
-        margin: 0 auto; /* Zentriert die Inhalte */
-    }
-
-    .breadcrumbs {
-        left: 10px;
-        top: 120px;
-        font-size: 0.8rem; /* Verkleinert die Schriftgröße für Breadcrumbs */
-    }
-}
-
-/* Tablets (Portrait und Landscape) */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-    .container {
-        flex-direction: column;
-        margin: 5%;
-    }
-
-    .unternehmenswerte, .bild-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .breadcrumbs {
-        left: 10px;
-        top: 150px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Desktop */
-@media only screen and (min-width: 901px) {
-    /* Beibehalten der Standard-Styles, eventuell leichte Anpassungen */
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px; /* Kleinere Schriftgröße für Mobilgeräte */
-    }
 }
 
 .team-mitglied {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem; /* Abstand zwischen Teammitgliedern */
+    font-size: 20px;
+    margin: 10rem auto 2rem auto;
     max-width: 960px; /* Maximale Breite des Blocks */
-    margin-left: auto; /* Horizontal zentriert */
-    margin-right: auto; /* Horizontal zentriert */
 }
 
 .team-mitglied-bild {
     border-radius: 50%; /* Kreisförmiges Bild */
-    width: 150px; /* Bildbreite */
-    height: 150px; /* Bildhöhe */
+    width: 190px; /* Bildbreite */
+    height: 190px; /* Bildhöhe */
     margin-right: 1.5rem; /* Abstand zwischen Bild und Beschreibung */
     object-fit: cover; /* Sorgt dafür, dass das Bild das Element vollständig ausfüllt */
 }
@@ -133,15 +93,32 @@ body {
     margin-bottom: .5rem; /* Abstand zwischen Rolle und Beschreibung */
 }
 
-@media only screen and (max-width: 600px) {
-    .team-mitglied {
+/* Media Queries für eine verbesserte Responsivität */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Kleinerer Text auf Tablets und kleineren Geräten */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Anpassung der Textgröße für eine bessere Lesbarkeit auf Smartphones */
+    }
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .breadcrumb {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        max-width: 100%; /* Ermöglicht eine volle Breite auf kleinen Bildschirmen */
     }
 
-    .team-mitglied-bild {
-        margin-bottom: 1rem; /* Abstand zwischen Bild und Beschreibung auf mobilen Geräten */
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "→\00a0"; /* Ändert das Trennzeichen für kleinere Bildschirme */
     }
 }
