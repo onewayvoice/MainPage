@@ -63,7 +63,7 @@ function createTeamspacePartTable($entries, $page, $shownPerPage, $username = fa
 
 function createInformationBox($table, $username, $page = 1){
     return "
-            <link rel='stylesheet' href='Teamspace/style_Teamspace.css'>
+            <link rel='stylesheet' href='style_Teamspace.css'>
             <div id='Teamspace_Base_View'> <!-- Teamspace Base View -->
                 <div id='Teamspace_Table'>
                     $table
@@ -71,7 +71,7 @@ function createInformationBox($table, $username, $page = 1){
                 <div id='Teamspace_Functions'>
                     <div id='nextprePage'>
                         <form id='Teamspace_PrevPage'><input style='display: none' name='username' value='$username' type='text'><input style='display: none' name='CurrentPage' value='$page' type='text'><button class='TeamspacenextprePage' type='submit'><</button></form>
-                        <a>".$page."</a>
+                        <a>" .$page."</a>
                         <form id='Teamspace_NextPage'><input style='display: none' name='username' value='$username' type='text'><input style='display: none' name='CurrentPage' value='$page' type='text'><button class='TeamspacenextprePage' type='submit'>></button></form>
                     </div>
                         <button onclick='openAddEntry()'>Add Entry</button>

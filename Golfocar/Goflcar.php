@@ -18,7 +18,7 @@
     <div class="menu-punkte"><!-- navigations punkte -->
         <a href="#">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
-        <a href="#" target="_blank">Tagebuch</a>
+        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
     </div>
 </div>
 
@@ -212,8 +212,8 @@
             <ul>
                 <li><a href="../Mainpage/Mainpage.php">Home</a></li>
                 <li><a href="#">Golfcar</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#" target="_blank">Tagebuch</a></li>
+                <li><a href="../Teampage/Teampage.php">Team</a></li>
+                <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
         </div>
     </div>

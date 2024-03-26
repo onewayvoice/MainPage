@@ -23,6 +23,7 @@
             <button id="controlButton" onclick="toggle_Teamspace()">Control</button>
             <h2 id="welcomeText">Logged In</h2>
             <div id="entries"></div>
+
         </div>
     </div>
     <div id="Control-part" style="display: none">
