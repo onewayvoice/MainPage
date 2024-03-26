@@ -19,10 +19,9 @@
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="">Golfcar</a>
-        <a href="">Sponsor</a>
-        <a href="">Team</a>
-        <a href="" target="_blank">Tagebuch</a>
+        <a href="../Mainpage/Mainpage.php">Golfcar</a>
+        <a href="../Teampage/Teampage.php">Team</a>
+        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
     </div>
 
 </div>

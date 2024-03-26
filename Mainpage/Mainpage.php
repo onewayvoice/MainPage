@@ -18,9 +18,8 @@
         </div>
         <div class="menu-punkte"><!-- navigations punkte -->
             <a href="../Golfocar/Goflcar.php">Golfcar</a>
-            <a href="">Sponsor</a>
             <a href="../Teampage/Teampage.php">Team</a>
-            <a href="" target="_blank">Tagebuch</a>
+            <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
         </div>
     </div>
     <div id="container">
@@ -103,7 +102,7 @@
                     <img class="svg-image" src="MainpageSVG/coffee-cup.svg" alt="SVG">
                 </div>
                 <div class="text-container">
-                    <h2 class="title">Coffee.Brakes</h2>
+                    <h2 class="title">Coffee.Breaks</h2>
                     <p class="word">89</p>
                 </div>
             </div>
@@ -140,8 +139,8 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#" target="_blank">Tagebuch</a></li>
+                <li><a href="../Teampage/Teampage.php">Team</a></li>
+                <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
         </div>
     </div>
