@@ -92,19 +92,9 @@
     <div class="footer-content">
         <div class="footer-section about">
             <h3>About Us</h3>
-            <p>Wir sind eine kleine Gruppe von vier Enthusiasten, die sich zusammengeschlossen haben, um etwas Neues zu
-                schaffen. Obwohl wir alle keine Erfahrung in dieser speziellen Branche haben, sind wir entschlossen,
-                alles Mögliche zu versuchen und dabei eine Menge zu lernen.
-
-                Unser Team setzt sich aus Menschen zusammen, die sich leidenschaftlich für Herausforderungen engagieren
-                und ständig nach neuen Möglichkeiten suchen, um ihr Wissen zu erweitern. Jeder von uns bringt
-                einzigartige Fähigkeiten und Perspektiven mit, die es uns ermöglichen, kreative Lösungen zu finden und
-                uns in unserem gemeinsamen Ziel zu unterstützen.
-
-                Wir wissen, dass der Weg vor uns herausfordernd sein wird, aber wir sind bereit, uns den
-                Herausforderungen zu stellen und gemeinsam zu wachsen. Wir glauben an den Wert von hartem Arbeit,
-                Teamarbeit und der Bereitschaft, aus Fehlern zu lernen. Mit jeder Herausforderung, die wir überwinden,
-                kommen wir unserem Ziel näher und werden stärker als Team.
+            <p>We're a small team of four enthusiasts, determined to create something new despite our limited
+                experience. Each of us brings unique skills and perspectives to creatively solve challenges together.
+                We believe in hard work, teamwork, and learning from mistakes to grow as a team and achieve our goals.
             </p>
         </div>
         <div class="footer-section contact">
