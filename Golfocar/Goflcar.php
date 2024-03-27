@@ -47,43 +47,47 @@
         <div class="content">
             <div>
                 <h2>Raspberry 4</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <p>The Raspberry Pi 4 Model B is an affordable single-board computer that, in its most basic form,
+                lacks a case and is roughly the size of a credit card. It is commonly used for projects related to
+                computer programming, electronics, and DIY endeavors .
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579639782539-15cc6c0be63f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img src="GolfcarImage/motor.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Motors</h2>
+                <p>For the motors, we have opted for four direct current (DC) motors, which are controlled using a PWM
+                signal.
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1603984362497-0a878f607b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">
+            <img src="GolfcarImage/reifen.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Wheels</h2>
+                <p>For the tires, we have opted for high-grip tires to ensure that the car has sufficient traction.
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579310962131-aa21f240d986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80">
+            <img src="GolfcarImage/cam.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Camera</h2>
+                <p>The camera we have chosen is a wide-angle camera to ensure that everything in front of the car can
+                be detected with certainty.
                 </p>
             </div>
         </div>
@@ -96,7 +100,7 @@
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
+                <h2>Battery</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
                 </p>
             </div>
