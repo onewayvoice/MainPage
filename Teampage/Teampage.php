@@ -82,8 +82,7 @@
     <div class="team-mitglied-info">
         <h3>Daniel Stocker</h3>
         <p class="team-mitglied-rolle">Webdesigner</p>
-        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
-            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+        <p>LOL</p>
     </div>
 </div>
 
