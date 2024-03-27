@@ -96,48 +96,50 @@
 <div class="container">
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579748138140-ce9ef2c32db1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img src="GolfcarImage/batterie.jpg">
         </div>
         <div class="content">
             <div>
                 <h2>Battery</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <p>We opted for a 7.2V 3000mAh battery because it provides a balanced combination of voltage and
+                    capacity that meets the requirements of our application.
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579639782539-15cc6c0be63f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img src="GolfcarImage/fotoresistor.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Photoresistor</h2>
+                <p>We need a resistor to detect when the light is off in order to activate the lamps.
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1603984362497-0a878f607b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">
+            <img src="GolfcarImage/lichter.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Lamps</h2>
+                <p>We chose these lights because they offer a very bright illumination for their price, and we are
+                    acquiring multiple units.
                 </p>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579310962131-aa21f240d986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80">
+            <img src="GolfcarImage/treiberplatine.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Driver Board</h2>
+                <p>We chose this driver board because we have DC motors that need to be used at various speeds and directions.
                 </p>
             </div>
         </div>
@@ -146,12 +148,13 @@
 <div class="container">
     <div class="box">
         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1579748138140-ce9ef2c32db1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+            <img src="GolfcarImage/Ultrasonic-Sensor.jpg">
         </div>
         <div class="content">
             <div>
-                <h2>Image Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+                <h2>Ultrasonic Sensor</h2>
+                <p>We opted for 5 ultrasonic sensors because we require multiple units, and they are widely available
+                    and commonly used.
                 </p>
             </div>
         </div>
