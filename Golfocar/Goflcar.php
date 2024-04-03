@@ -21,7 +21,11 @@
         <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
     </div>
 </div>
-
+<!-- Breadcrumb -->
+<nav class="breadcrumb" id="teamPageBreadCrumb">
+    <a href="../Mainpage/Mainpage.php">Startseite</a>
+    <a href="" style="font-weight: bold">&nbsp;Golfcar</a>
+</nav>
 <div class="introduction">
     <div class="first-img">
         <img class="img-first" src="../Mainpage/MainpageBilder/preview_hochkant.jpg" alt="">
