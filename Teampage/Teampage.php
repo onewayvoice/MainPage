@@ -19,9 +19,9 @@
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="">Golfcar</a>
-        <a href="">Team</a>
-        <a href="" target="_blank">Tagebuch</a>
+        <a href="../Golfcar/Golfcar.php">Golfcar</a>
+        <a href="#">Team</a>
+        <a href="../Tagebuch/TEamspace.php" target="_blank">Tagebuch</a>
     </div>
 
 </div>
@@ -99,7 +99,7 @@
         </div>
         <div class="footer-section contact">
             <h3>Contact Us</h3>
-            <p>Email: example@example.com</p>
+            <p>Email: golfomobilmeister.fallmerayer@gmail.com</p>
         </div>
         <div class="footer-section links">
             <h3>Quick Links</h3>
