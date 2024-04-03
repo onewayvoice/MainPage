@@ -248,3 +248,32 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #777;
 }
+
+@media (min-width: 320px) {/* kleine Smartphones */
+    .title, .title-img-div {
+        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
+}
+
+@media (min-width: 400px) {/* moderne smartphones */
+    #container {
+        padding: 10px;
+    }
+
+    .title-bar {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {/* tablets hochformat */
+    #container {
+        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
+    }
+}
+
+@media (min-width: 1024px) {/* Desktop Styles */
+    body {
+        font-size: 20px;
+        padding: 60px;
+    }
+}
