@@ -217,13 +217,13 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) {/* kleine Smartphones */
     .title, .title-img-div {
         flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 400px) {/* moderne smartphones */
     #container {
         padding: 10px;
     }
@@ -233,8 +233,15 @@ footer {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 768px) {/* tablets hochformat */
     #container {
         max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
+    }
+}
+
+@media (min-width: 1024px) {/* Desktop Styles */
+    body {
+        font-size: 20px;
+        padding: 60px;
     }
 }
