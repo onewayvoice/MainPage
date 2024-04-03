@@ -250,6 +250,12 @@ footer {
 }
 
 @media (min-width: 320px) {/* kleine Smartphones */
+    .container{
+        flex-direction: column;
+    }
+    .body{
+        margin-top: 10%;
+    }
     .title, .title-img-div {
         flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
     }
