@@ -19,9 +19,9 @@
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="../Golfcar/Golfcar.php">Golfcar</a>
+        <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="#">Team</a>
-        <a href="../Tagebuch/TEamspace.php" target="_blank">Tagebuch</a>
+        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
     </div>
 
 </div>
@@ -105,7 +105,7 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="../Mainpage/Mainpage.php">Home</a></li>
-                <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
+                <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
