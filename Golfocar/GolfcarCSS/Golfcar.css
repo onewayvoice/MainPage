@@ -199,7 +199,9 @@ body {
 .box {
 
 }
+.conten-div {
 
+}
 
 
 
@@ -257,37 +259,82 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (min-width: 320px) {/* kleine Smartphones */
-    .container.box{
+
+@media (max-width: 480px) {/* moderne smartphones */
+    * {
+        pointer-events: none;
+    }
+    /* Stellt die Breite der Hauptcontainer ein */
+    .introduction, .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Passt die Bilder und Inhalte innerhalb der Einführung und Container an */
+    .first-img, .imgBx, .first-content, .content {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .first-content {
+        margin-top: 10%;
         flex-direction: column;
     }
-    .body{
-        margin-top: 10%;
-    }
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
-    }
-}
 
-@media (min-width: 400px) {/* moderne smartphones */
-    #container {
+    .img-first {
+        max-height: 400px;
+    }
+
+    /* Passt den Titel und Text im Einführungsabschnitt an */
+    .first-title {
+        font-size: 48px;
+        padding: 5% 0;
+    }
+
+    .first-text {
+        font-size: 16px;
+    }
+
+    /* Stellt sicher, dass Boxen und deren Inhalt korrekt dargestellt werden */
+    .container .box {
+        width: 90%; /* Etwas Abstand zu den Seitenrändern */
+        margin: 20px auto; /* Erhöht den Abstand zwischen den Boxen */
+        flex-direction: column;
+    }
+
+    /* Passt die Überschriften und Texte in den Boxen an */
+    .container .box .content h2, .container .box .content p {
+        text-align: center;
+        transform: translateY(0);
+    }
+
+    /* Anpassungen für den Footer-Bereich */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        text-align: center;
         padding: 10px;
+        width: 100%;
     }
 
-    .title-bar {
-        margin-top: 10px;
+    .menu-punkte a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .breadcrumb {
+        visibility: hidden;
+    }
+    .conten-div {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
     }
 }
 
-@media (min-width: 768px) {/* tablets hochformat */
-    #container {
-        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
-    }
-}
-
-@media (min-width: 1024px) {/* Desktop Styles */
-    body {
-        font-size: 20px;
-        padding: 60px;
-    }
-}

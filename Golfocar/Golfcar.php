@@ -49,7 +49,7 @@
             <img src="GolfcarImage/raspberry.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Raspberry 4</h2>
                 <p>The Raspberry Pi 4 Model B is an affordable single-board computer that, in its most basic form,
                 lacks a case and is roughly the size of a credit card. It is commonly used for projects related to
@@ -63,7 +63,7 @@
             <img src="GolfcarImage/motor.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Motors</h2>
                 <p>For the motors, we have opted for four direct current (DC) motors, which are controlled using a PWM
                 signal.
@@ -76,7 +76,7 @@
             <img src="GolfcarImage/reifen.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Wheels</h2>
                 <p>For the tires, we have opted for high-grip tires to ensure that the car has sufficient traction.
                 </p>
@@ -88,7 +88,7 @@
             <img src="GolfcarImage/cam.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Camera</h2>
                 <p>The camera we have chosen is a wide-angle camera to ensure that everything in front of the car can
                 be detected with certainty.
@@ -103,7 +103,7 @@
             <img src="GolfcarImage/batterie.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Battery</h2>
                 <p>We opted for a 7.2V 3000mAh battery because it provides a balanced combination of voltage and
                     capacity that meets the requirements of our application.
@@ -116,7 +116,7 @@
             <img src="GolfcarImage/fotoresistor.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Photoresistor</h2>
                 <p>We need a resistor to detect when the light is off in order to activate the lamps.
                 </p>
@@ -128,7 +128,7 @@
             <img src="GolfcarImage/lichter.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Lamps</h2>
                 <p>We chose these lights because they offer a very bright illumination for their price, and we are
                     acquiring multiple units.
@@ -141,7 +141,7 @@
             <img src="GolfcarImage/treiberplatine.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Driver Board</h2>
                 <p>We chose this driver board because we have DC motors that need to be used at various speeds and directions.
                 </p>
@@ -155,7 +155,7 @@
             <img src="GolfcarImage/Ultrasonic-Sensor.jpg">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Ultrasonic Sensor</h2>
                 <p>We opted for 5 ultrasonic sensors because we require multiple units, and they are widely available
                     and commonly used.
@@ -168,7 +168,7 @@
             <img src="https://images.unsplash.com/photo-1579639782539-15cc6c0be63f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Image Title</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
                 </p>
@@ -180,7 +180,7 @@
             <img src="https://images.unsplash.com/photo-1603984362497-0a878f607b92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80">
         </div>
         <div class="content">
-            <div>
+            <div class="conten-div">
                 <h2>Image Title</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
                 </p>
