@@ -122,7 +122,7 @@
         </div>
         <div class="footer-section contact">
             <h3>Contact Us</h3>
-            <p>Email: example@example.com</p>
+            <p>Email: golfomobilmeister.fallmerayer@gmail.com</p>
         </div>
         <div class="footer-section links">
             <h3>Quick Links</h3>
