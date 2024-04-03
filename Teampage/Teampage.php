@@ -33,7 +33,7 @@
 
     <!-- Dropdown Menu -->
     <div class="nav-links" id="navbar">
-        <a href="../Mainpage/Mainpage.php">Startseite</a>
+        <a href="../Mainpage/Mainpage.php">Startseit</a>
         <a href="/Teampage/Teampage.php">Team</a>
         <a href="/Tagebuch/Teamspace.php">Tagebuch</a>
     </div>
