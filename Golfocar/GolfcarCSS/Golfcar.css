@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .nav-bar {
     padding-bottom: 50px;
 }
@@ -50,6 +51,7 @@ body {
 .breadcrumb a:last-child:after {
     content: '';
 }
+
 .introduction {
     margin: 0 auto;
     width: 60%;
@@ -58,6 +60,7 @@ body {
     height: 800px;
 
 }
+
 .first-img {
     width: 50%;
     height: 100%;
@@ -68,15 +71,18 @@ body {
     justify-content: center;
     margin-right: 10px;
 }
+
 .img-first {
     width: auto;
     height: 750px;
     border-radius: 10px;
 }
+
 .first-content {
     width: 50%;
     align-self: center;
 }
+
 .first-title {
     margin: 0;
     font-family: Luminari, fantasy;
@@ -84,6 +90,7 @@ body {
     padding-bottom: 10%;
     color: #5f3ddc;
 }
+
 .first-text {
     font-family: Courier, monospace;
     font-size: 20px;

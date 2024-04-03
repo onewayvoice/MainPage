@@ -19,11 +19,32 @@
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="../Golfcar/Golfcar.php">Golfcar</a>
-        <a href="#">Team</a>
-        <a href="../Tagebuch/TEamspace.php" target="_blank">Tagebuch</a>
+        <a href="../Golfocar/Golfcar.php">Golfcar</a>
+        <a href="../Teampage/Teampage.php">Team</a>
+        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
     </div>
 
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="nav-links" id="navbar">
+        <a href="../Mainpage/Mainpage.php">Startseite</a>
+        <a href="/Teampage/Teampage.php">Team</a>
+        <a href="/Tagebuch/Teamspace.php">Tagebuch</a>
+    </div>
+
+    <script>
+        // JavaScript to toggle the menu
+        function toggleMenu() {
+            let menu = document.getElementById("navbar");
+            menu.classList.toggle("active");
+        }
+    </script>
 </div>
 
 <!-- Breadcrumb -->
