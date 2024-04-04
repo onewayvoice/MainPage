@@ -64,7 +64,7 @@
     </div>
 
     <div class="bild-container" id="teambild">
-        <img src="photo.png" alt="Bildbeschreibung" width="770" height="420">
+        <img src="../preview_querkant.jpg" alt="Bildbeschreibung" width="770" height="420">
     </div>
 </div>
 
@@ -135,6 +135,5 @@
     <div class="footer-bottom"><!-- &copy; ist das logo mit dem C -->
         &copy; 2024 MyWebsite | Designed by Me
     </div>
-
 </footer>
 </html>

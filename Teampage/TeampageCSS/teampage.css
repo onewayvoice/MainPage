@@ -44,7 +44,7 @@ body {
     position: absolute;
     right: 0;
     background-color: #fff;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -64,8 +64,12 @@ body {
     display: block;
 }
 
-/* Responsive Design */
+/* Responsive Design fuer Smartphones */
 @media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
@@ -80,8 +84,8 @@ body {
         right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
         top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
         background-color: #fff;
-        width: calc(100% - 420px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
 
@@ -99,9 +103,79 @@ body {
     .menu-punkte a {
         visibility: hidden;
     }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .breadcrumb {
+        flex-direction: column;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "→\00a0"; /* Ändert das Trennzeichen für kleinere Bildschirme */
+    }
+
+    .bild-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-mitglied-rolle, .team-mitglied-info {
+        font-size: 10px;
+    }
+
+    .bild-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title, .title-img-div {
+        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
 }
 
+/* Standards für größere Bildschirme setzen */
+@media (min-width: 769px) {
+    body {
+        font-size: 20px; /* Setzen Sie hier die gewünschte Standard-Schriftgröße fest */
+    }
 
+    .hamburger {
+        display: none; /* Stellen Sie sicher, dass das Hamburger-Menü verborgen bleibt */
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex; /* Beibehalten oder anpassen der Anzeige für größere Bildschirme */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; /* Beibehalten oder anpassen des Innenabstands */
+    }
+
+    .menu-punkte a {
+        visibility: visible; /* Alle Menüpunkte sichtbar machen */
+    }
+
+    .breadcrumb {
+        display: flex; /* ursprüngliche Anzeige wiederherstellen */
+        flex-direction: row; /* Richtung zurücksetzen */
+    }
+
+    .bild-container img {
+        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
+        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
+        object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
+        height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
+    }
+
+    .title, .title-img-div {
+        flex-basis: auto;
+    }
+}
 
 .container {
     display: flex;
@@ -154,12 +228,6 @@ body {
     content: '';
 }
 
-@media (max-width: 768px) {
-    .breadcrumb {
-        display: none; /* Versteckt die Breadcrumbs auf Bildschirmen kleiner als 768px */
-    }
-}
-
 .team-mitglied {
     display: flex;
     align-items: center;
@@ -192,53 +260,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 18px; /* Kleinerer Text auf Tablets und kleineren Geräten */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 16px; /* Anpassung der Textgröße für eine bessere Lesbarkeit auf Smartphones */
-    }
-}
-
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-    .breadcrumb {
-        flex-direction: column;
-    }
-
-    .breadcrumb-item + .breadcrumb-item::before {
-        content: "→\00a0"; /* Ändert das Trennzeichen für kleinere Bildschirme */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER CSS */
-
 footer {
     margin-top: 150px;
     background-color: #333;
@@ -250,14 +272,22 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 150vh;
-    width: 100vw;
+    height: auto; /* angepasst von 150vh */
+    width: 100%; /* angepasst von 100vw */
+    max-width: 100%; /* um sicherzustellen, dass es nie breiter als der Viewport ist */
+    overflow: hidden; /* verhindert das Überlaufen des Inhalts */
 }
 
 .footer-section {
     padding: 20px;
     flex: 1;
+    box-sizing: border-box; /* stellt sicher, dass padding und border innerhalb der Breite enthalten sind */
 }
+
+@media (max-width: 320px) {
+
+}
+
 
 .footer-section h3 {
     color: #fff;
@@ -291,12 +321,6 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 768px) {
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
-    }
-}
-
 @media (max-width: 480px) {
     #container {
         padding: 10px;
@@ -322,9 +346,11 @@ footer {
 
     .footer-content {
         flex-direction: column; /* Stack footer content vertically on smaller screens */
+        align-items: center; /* Zentriert Inhalte für eine bessere Ansicht auf kleineren Bildschen */
     }
 
     .footer-section {
+        flex-direction: column;
         padding: 10px; /* Reduce padding for smaller screens */
         text-align: center; /* Center content for readability */
     }
