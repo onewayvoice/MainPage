@@ -60,7 +60,7 @@ img {
 }
 
 #title-text {
-    font-family: Courier, monospace;
+    font-family: Menlo, monospace;
     font-size: 20px;
     color: black;
 }
@@ -256,7 +256,7 @@ footer {
 
     #title {
         margin: 0;
-        font-family: Luminari, fantasy;
+        font-family: "Lucida Console", monospace;
         font-size: 100px;
     }
 
