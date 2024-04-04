@@ -159,6 +159,7 @@ body {
 
     .bild-container img {
         max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
+        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
         object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
         height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
     }
@@ -170,7 +171,7 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     font-size: 20px;
     height: auto;
     justify-content: space-between;
