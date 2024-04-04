@@ -27,7 +27,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: "POST",
-            url: "Form_login.php", // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: "../Tagebuch/Form_login.php", // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
@@ -74,7 +74,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: 'POST',
-            url: 'Form_addEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: '../Tagebuch/Form_addEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
@@ -97,7 +97,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: 'POST',
-            url: 'Form_editEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: '../Tagebuch/Form_editEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
@@ -119,7 +119,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: 'POST',
-            url: 'Form_PrevPage.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: '../Tagebuch/Form_PrevPage.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
@@ -141,7 +141,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: 'POST',
-            url: 'Form_NextPage.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: '../Tagebuch/Form_NextPage.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
@@ -163,7 +163,7 @@ $(document).ready(function(){
         e.preventDefault(); // Verhindert das Neuladen der Seite
         $.ajax({
             type: 'POST',
-            url: 'Form_deleteEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
+            url: '../Tagebuch/Form_deleteEntry.php', // Der Pfad zum PHP-Skript, das die Anmeldung verarbeitet
             data: $(this).serialize(),
             success: function(response){
                 // Die Antwort des Servers verarbeiten
