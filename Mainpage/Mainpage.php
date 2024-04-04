@@ -20,6 +20,7 @@
         <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
         <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
+        <a href="../controlls/controls.php">controls</a>
     </div>
 </div>
 <div id="container">
