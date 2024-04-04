@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="TeampageCSS/teampage.css">
     <link rel="stylesheet" href="../Navbar/NavbarCSS/navbar.css">
 
+
 </head>
 <body>
 
@@ -22,7 +23,9 @@
         <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
         <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
+        <a href="../controlls/controls.php">controls</a>
     </div>
+
 
     <!-- Hamburger Icon -->
     <div class="hamburger" onclick="toggleMenu()">

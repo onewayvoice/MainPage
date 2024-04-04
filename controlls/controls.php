@@ -55,6 +55,6 @@
         </div>
     </div>
 </div>
-<script src="funktions_control.js"></script>
+<script src="../Tagebuch/functions_Teamspace.js"></script>
 </body>
 </html>
