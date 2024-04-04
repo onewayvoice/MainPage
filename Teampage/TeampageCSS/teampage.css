@@ -8,7 +8,7 @@
 /* Apply font family */
 body {
     font-family: 'Open Sans', sans-serif;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     line-height: 1.6;
     color: #333;
@@ -108,26 +108,18 @@ body {
         display: none;
     }
 
-    .breadcrumb {
-        flex-direction: column;
-    }
-
-    .breadcrumb-item + .breadcrumb-item::before {
-        content: "→\00a0"; /* Ändert das Trennzeichen für kleinere Bildschirme */
-    }
-
     .bild-container img {
         width: 100%;
         height: auto;
     }
 
-    .team-mitglied-rolle, .team-mitglied-info {
-        font-size: 10px;
-    }
-
-    .bild-container img {
+    .team-mitglied-bild {
         max-width: 100%;
         height: auto;
+    }
+
+    .team-mitglied-rolle, .team-mitglied-info {
+        font-size: 10px;
     }
 
     .title, .title-img-div {
@@ -167,7 +159,6 @@ body {
 
     .bild-container img {
         max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
-        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
         object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
         height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
     }
@@ -179,7 +170,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     font-size: 20px;
     height: auto;
     justify-content: space-between;

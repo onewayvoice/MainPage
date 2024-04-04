@@ -64,7 +64,7 @@
     </div>
 
     <div class="bild-container" id="teambild">
-        <img src="../preview_querkant.jpg" alt="Bildbeschreibung" width="770" height="420">
+        <img src="../preview_querkant.jpg" alt="Bildbeschreibung">
     </div>
 </div>
 
