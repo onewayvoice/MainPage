@@ -60,7 +60,7 @@ img {
 }
 
 #title-text {
-    font-family: Courier, monospace;
+    font-family: Menlo, monospace;
     font-size: 20px;
     color: black;
 }
@@ -217,31 +217,113 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (min-width: 320px) {/* kleine Smartphones */
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
-    }
-}
-
-@media (min-width: 400px) {/* moderne smartphones */
-    #container {
-        padding: 10px;
+@media (max-width: 480px) {/* kleine Smartphones */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
-    .title-bar {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 768px) {/* tablets hochformat */
-    #container {
-        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
-    }
-}
-
-@media (min-width: 1024px) {/* Desktop Styles */
     body {
+        font-family: Arial, sans-serif;
+    }
+    .title-bar {
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 100%;
+        align-self: center;
+    }
+
+    .title-img-div { /* classe */
+        margin: 0;
+        height: 80%;
+        width: 100%;
+    }
+    #title-img { /* img ansich */
+        object-fit: contain;
+    }
+
+
+    #pre-title {
+        font-family: Courier, monospace;
         font-size: 20px;
-        padding: 60px;
+    }
+
+    #title {
+        margin: 0;
+        font-family: "Lucida Console", monospace;
+        font-size: 100px;
+    }
+
+    #title-text {
+        font-family: Courier, monospace;
+        font-size: 20px;
+        color: black;
+    }
+
+
+    #button-div {
+        z-index: 2;
+    }
+
+    #title-button {
+        background-color: #5f3ddc;
+        color: white;
+        border: 1px solid #5f3ddc;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+
+    #title-button:hover {
+        background-color: white;
+        color: #5f3ddc;
+    }
+    /*-------------------------------*/
+    #erfolge-top {
+        margin-top: 30px;
+    }
+
+    #erfolge-bottom {
+        margin: 0;
+    }
+
+    #erfolge-top, #erfolge-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center; /* Horizontale Zentrierung */
+        align-items: center; /* Vertikale Zentrierung */
+        margin-bottom: 30px;
+    }
+
+    .svg-container {
+        flex: 0 0 auto; /* Verhindere, dass das SVG wächst */
+    }
+    #title {
+        font-size: 200%;
+        margin-top: 0;
+    }
+
+
+    .svg-image {
+        width: 150px; /* Ändere die Größe des SVG-Bildes */
+        height: auto; /* Halte das Seitenverhältnis beibehalten */
+        margin: 0;
     }
 }
