@@ -263,6 +263,13 @@ footer {
 @media (max-width: 480px) {/* moderne smartphones */
     * {
         pointer-events: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-bar {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     /* Stellt die Breite der Hauptcontainer ein */
     .introduction, .container {
