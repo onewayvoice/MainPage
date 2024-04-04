@@ -23,6 +23,7 @@ function logout(){
     document.getElementById("password").value = "";
 }
 
+
 $(document).ready(function(){
     $("#formLogin").on('submit', function(e){
         e.preventDefault(); // Verhindert das Neuladen der Seite
