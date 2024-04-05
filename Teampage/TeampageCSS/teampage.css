@@ -136,18 +136,13 @@ body {
 .team-mitglied-info {
     flex: 1;
     margin-left: 5%;
+    padding-left: 5%;
+    border-left: black 1px solid;
 }
 
 .team-mitglied-rolle {
     font-weight: bold; /* Hebt die Rolle hervor */
     margin-bottom: .5rem; /* Abstand zwischen Rolle und Beschreibung */
-}
-
-/* Media Queries für eine verbesserte Responsivität */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
-    }
 }
 
 /* FOOTER CSS */
@@ -204,22 +199,6 @@ footer {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #777;
-}
-
-@media (max-width: 480px) {
-    #container {
-        padding: 10px;
-    }
-
-    .title-bar {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 1920px) {
-    #container {
-        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
-    }
 }
 
 @media (max-width: 320px) {
@@ -385,5 +364,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+}
+
+/* Media Queries für eine verbesserte Responsivität */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
     }
 }
