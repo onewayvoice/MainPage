@@ -64,111 +64,6 @@ body {
     display: block;
 }
 
-/* Responsive Design fuer Smartphones */
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 10px; /* Positive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
-        top: 10px;
-        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
-        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
-        background-color: #fff;
-        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-
-    .nav-links.active {
-        display: block;
-    }
-
-    .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .menu-punkte a {
-        visibility: hidden;
-    }
-
-    .breadcrumb {
-        display: none;
-    }
-
-    .bild-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    .team-mitglied-bild {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .team-mitglied-rolle, .team-mitglied-info {
-        font-size: 10px;
-    }
-
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
-    }
-}
-
-/* Standards für größere Bildschirme setzen */
-@media (min-width: 769px) {
-    body {
-        font-size: 20px; /* Setzen Sie hier die gewünschte Standard-Schriftgröße fest */
-    }
-
-    .hamburger {
-        display: none; /* Stellen Sie sicher, dass das Hamburger-Menü verborgen bleibt */
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .nav-bar {
-        display: flex; /* Beibehalten oder anpassen der Anzeige für größere Bildschirme */
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px; /* Beibehalten oder anpassen des Innenabstands */
-    }
-
-    .menu-punkte a {
-        visibility: visible; /* Alle Menüpunkte sichtbar machen */
-    }
-
-    .breadcrumb {
-        display: flex; /* ursprüngliche Anzeige wiederherstellen */
-        flex-direction: row; /* Richtung zurücksetzen */
-    }
-
-    .bild-container img {
-        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
-        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
-        object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
-        height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
-    }
-
-    .title, .title-img-div {
-        flex-basis: auto;
-    }
-}
-
 .container {
     display: flex;
     max-width: 100%;
@@ -176,10 +71,12 @@ body {
     height: auto;
     justify-content: space-between;
     align-items: center;
-    margin: 10% 10% 0 10%;
-    padding: 10px;
+    margin: 5% 10% 0 10%;
 }
 
+.bild-container {
+    margin-left: 10%;
+}
 
 .breadcrumb {
     display: flex;
@@ -238,18 +135,14 @@ body {
 
 .team-mitglied-info {
     flex: 1;
+    margin-left: 5%;
+    padding-left: 5%;
+    border-left: black 1px solid;
 }
 
 .team-mitglied-rolle {
     font-weight: bold; /* Hebt die Rolle hervor */
     margin-bottom: .5rem; /* Abstand zwischen Rolle und Beschreibung */
-}
-
-/* Media Queries für eine verbesserte Responsivität */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
-    }
 }
 
 /* FOOTER CSS */
@@ -275,11 +168,6 @@ footer {
     flex: 1;
     box-sizing: border-box; /* stellt sicher, dass padding und border innerhalb der Breite enthalten sind */
 }
-
-@media (max-width: 320px) {
-
-}
-
 
 .footer-section h3 {
     color: #fff;
@@ -313,22 +201,6 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 480px) {
-    #container {
-        padding: 10px;
-    }
-
-    .title-bar {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 1920px) {
-    #container {
-        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
-    }
-}
-
 @media (max-width: 320px) {
     .container {
         flex-direction: column;
@@ -349,5 +221,155 @@ footer {
 
     body, .breadcrumb a, .footer-section p {
         font-size: 14px; /* Adjust font size for readability on small screens */
+    }
+}
+
+/* Responsive Design fuer Smartphones */
+@media (min-width: 600px) and (max-width: 900px){
+    body {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
+        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
+        background-color: #fff;
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: hidden;
+    }
+
+    .breadcrumb {
+        visibility: hidden;
+    }
+
+    .bild-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-mitglied-bild {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .team-mitglied-rolle, .team-mitglied-info {
+        font-size: 10px;
+        padding-right: 5%;
+    }
+
+    .title, .title-img-div {
+        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
+}
+
+/* Standards für größere Bildschirme setzen */
+@media (min-width: 769px) {
+    body {
+        font-size: 20px; /* Setzen Sie hier die gewünschte Standard-Schriftgröße fest */
+    }
+
+    .hamburger {
+        display: none; /* Stellen Sie sicher, dass das Hamburger-Menü verborgen bleibt */
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex; /* Beibehalten oder anpassen der Anzeige für größere Bildschirme */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: visible; /* Alle Menüpunkte sichtbar machen */
+    }
+
+    .breadcrumb {
+        display: flex; /* ursprüngliche Anzeige wiederherstellen */
+        flex-direction: row; /* Richtung zurücksetzen */
+    }
+
+    .bild-container img {
+        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
+        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
+        object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
+        height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
+    }
+
+    .title, .title-img-div {
+        flex-basis: auto;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 380px) {
+    /* Anpassungen speziell für Handys im Querformat */
+    .nav-bar .menu-punkte, .nav-links {
+        /* Hamburger Menü sichtbar machen und reguläre Menüpunkte ausblenden */
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        right: 20px;
+        top: 10px;
+    }
+
+    .container, .team-mitglied {
+        /* Flexbox-Anpassungen, um Inhalte besser zu organisieren */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-mitglied-bild {
+        /* Bilder kleiner machen, damit sie besser ins Layout passen */
+        width: 50%;
+        height: auto;
+    }
+
+    .bild-container img {
+        /* Sicherstellen, dass Hauptbilder vollständig sichtbar sind */
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-content, .footer-section {
+        /* Footer-Elemente für kleine Bildschirme optimieren */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Media Queries für eine verbesserte Responsivität */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
     }
 }

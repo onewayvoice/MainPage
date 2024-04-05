@@ -73,7 +73,7 @@
 
 <!-- Teammitglieder -->
 <div class="team-mitglied">
-    <img src="Matthi.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <img src="/Teampage/TeampageBilder/Matthi.jpg" alt="[NAME]" class="team-mitglied-bild">
     <div class="team-mitglied-info">
         <h3>Matthias Zelger</h3>
         <p class="team-mitglied-rolle">Projektleiter</p>
@@ -82,7 +82,7 @@
 </div>
 
 <div class="team-mitglied">
-    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <img src="/Teampage/TeampageBilder/Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
     <div class="team-mitglied-info">
         <h3>Miguel Angel Gasser</h3>
         <p class="team-mitglied-rolle">Webdesigner</p>
@@ -92,7 +92,7 @@
 </div>
 
 <div class="team-mitglied">
-    <img src="Vid.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <img src="/Teampage/TeampageBilder/Vid.jpg" alt="[NAME]" class="team-mitglied-bild">
     <div class="team-mitglied-info">
         <h3>David Erlacher</h3>
         <p class="team-mitglied-rolle">Automechaniker</p>
@@ -102,7 +102,7 @@
 </div>
 
 <div class="team-mitglied">
-    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
+    <img src="/Teampage/TeampageBilder/Daniel.jpg" alt="[NAME]" class="team-mitglied-bild">
     <div class="team-mitglied-info">
         <h3>Daniel Stocker</h3>
         <p class="team-mitglied-rolle">Webdesigner</p>
