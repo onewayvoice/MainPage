@@ -18,7 +18,7 @@
 .menu-punkte {
     text-align: center; /* Zentriere die Links horizontal */
     display: flex; /*damit links am richtigen ort stehen*/
-    font-size: 20px;
+    font-size: 15px;
     width: 40%;
     margin-left: auto; /*das div wird ganz links plaziert*/
     align-items: center; /* Zentriere den Inhalt vertikal */
