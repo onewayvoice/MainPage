@@ -135,6 +135,7 @@ body {
 
 .team-mitglied-info {
     flex: 1;
+    margin-left: 5%;
 }
 
 .team-mitglied-rolle {
