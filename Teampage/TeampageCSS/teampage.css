@@ -328,7 +328,7 @@ footer {
     }
 }
 
-@media (orientation: landscape) and (max-height: 480px) {
+@media (orientation: landscape) and (max-height: 380px) {
     /* Anpassungen speziell für Handys im Querformat */
     .nav-bar .menu-punkte, .nav-links {
         /* Hamburger Menü sichtbar machen und reguläre Menüpunkte ausblenden */
