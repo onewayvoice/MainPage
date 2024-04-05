@@ -233,7 +233,7 @@ footer {
     .hamburger {
         display: block;
         position: absolute;
-        right: 10px; /* Positive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
         top: 10px;
         z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
     }
