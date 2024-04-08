@@ -43,6 +43,10 @@ iframe{
     #containerAlle{
         flex-flow: wrap;
     }
+    #nipple_0_0{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-height: 600px) and (orientation: landscape) {
