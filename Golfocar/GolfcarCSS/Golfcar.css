@@ -203,10 +203,6 @@ body {
 
 }
 
-
-
-
-
 /* FOOTER CSS */
 footer {
     width: 100%;
@@ -260,7 +256,7 @@ footer {
 }
 
 
-@media (max-width: 480px) {/* moderne smartphones */
+@media (max-width: 600px) {/* moderne smartphones */
     * {
         pointer-events: none;
         padding: 0;
@@ -344,4 +340,24 @@ footer {
         border-radius: 10px;
     }
 }
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .box {
+        width: 51%;
+        height: auto;
+        margin: 1%;
+    }
+    .breadcrumb {
+        visibility: hidden;
+    }
+    .conten-div {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
 
+}

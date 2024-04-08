@@ -19,7 +19,7 @@
                  alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
         </a>
     </div>
-    <div class="menu-punkte"><!-- navigations punkte -->
+    <div class="menu-punkte"><!-- navigations punkte für desktop-->
         <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
         <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
@@ -37,6 +37,7 @@
     <!-- Dropdown Menu -->
     <div class="nav-links" id="navbar">
         <a href="../Mainpage/Mainpage.php">Startseit</a>
+        <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="/Teampage/Teampage.php">Team</a>
         <a href="/Tagebuch/Teamspace.php">Tagebuch</a>
     </div>

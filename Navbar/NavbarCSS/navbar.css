@@ -31,7 +31,7 @@
 }
 
 
-@media (max-width: 375px) {/* kleine Smartphones */
+@media (max-width: 480px) {/* kleine Smartphones */
     .nav-bar {
         margin-left: 0;
         padding-left: 0;

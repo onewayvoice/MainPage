@@ -217,7 +217,7 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 480px) {/* kleine Smartphones */
+@media (max-width: 600px) {/* kleine Smartphones */
     * {
         box-sizing: border-box;
         margin: 0;
@@ -256,7 +256,7 @@ footer {
 
     #title {
         margin: 0;
-        font-family: "Lucida Console", monospace;
+        font-family: "Lucida Console ", monospace;
         font-size: 100px;
     }
 
@@ -325,5 +325,10 @@ footer {
         width: 150px; /* Ändere die Größe des SVG-Bildes */
         height: auto; /* Halte das Seitenverhältnis beibehalten */
         margin: 0;
+    }
+}
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    *{
+        background-color: orange;
     }
 }
