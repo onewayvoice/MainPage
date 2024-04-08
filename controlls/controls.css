@@ -44,7 +44,9 @@ iframe{
         flex-flow: wrap;
     }
     #nipple_0_0{
+        position: relative;
         width: 100%;
+        justify-self: center;
     }
 
 }
