@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         // Send the JSON payload to the server
-        fetch('http://10.171.152.175:5000/move', {
+        fetch('http://172.20.10.4:8080/move', {
             method: 'POST',
             headers: {
                 'Content-Type': 'text/plain',
