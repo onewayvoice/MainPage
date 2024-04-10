@@ -129,7 +129,7 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="../Mainpage/Mainpage.php">Home</a></li>
-                <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
+                <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
