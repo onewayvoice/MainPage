@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* Apply font family */
@@ -15,6 +17,12 @@ body {
     background: #fff; /* Assuming a white background; change if needed */
     margin: 0;
     padding: 0;
+}
+
+.main-Container {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Hamburger Menu Styles */
@@ -75,7 +83,7 @@ body {
 }
 
 .bild-container {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .breadcrumb {
@@ -201,33 +209,19 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 320px) {
-    .container {
-        flex-direction: column;
-        margin: 10% 5% 0 5%; /* Reduce margin for smaller screens */
-        padding: 5px; /* Adjust padding as necessary */
-    }
-
-    .footer-content {
-        flex-direction: column; /* Stack footer content vertically on smaller screens */
-        align-items: center; /* Zentriert Inhalte für eine bessere Ansicht auf kleineren Bildschen */
-    }
-
-    .footer-section {
-        flex-direction: column;
-        padding: 10px; /* Reduce padding for smaller screens */
-        text-align: center; /* Center content for readability */
-    }
-
-    body, .breadcrumb a, .footer-section p {
-        font-size: 14px; /* Adjust font size for readability on small screens */
-    }
-}
 
 /* Responsive Design fuer Smartphones */
-@media (min-width: 600px) and (max-width: 900px){
+@media (min-width: 300px) and (max-width: 900px){
     body {
         font-size: 18px;
+    }
+
+    .container {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 35px;
     }
 
     .hamburger {
@@ -257,7 +251,6 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
     }
 
     .menu-punkte a {
@@ -274,17 +267,30 @@ footer {
     }
 
     .team-mitglied-bild {
-        max-width: 80%;
-        height: auto;
+        width: 8rem;
+        height: 8rem;
+        margin-left: 4%;
     }
 
     .team-mitglied-rolle, .team-mitglied-info {
-        font-size: 10px;
+        font-size: 20px;
         padding-right: 5%;
     }
 
     .title, .title-img-div {
         flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
+
+    .footer-content {
+        font-size: 25px;
+    }
+
+    .footer-section.about {
+        font-size: 50px;
+    }
+
+    .footer-bottom {
+        font-size: 25px;
     }
 }
 
@@ -350,8 +356,8 @@ footer {
 
     .team-mitglied-bild {
         /* Bilder kleiner machen, damit sie besser ins Layout passen */
-        width: 50%;
-        height: auto;
+        width: 8rem;
+        height: 8rem;
     }
 
     .bild-container img {

@@ -1,6 +1,15 @@
+:root {
+    --logo-width: 2.4rem;
+}
+
+
 #nav-bar-logo {
-    width: 25%;
+    /*
+    width: 35%;
     height: auto;
+     */
+    width: calc(var(--logo-width) * 3.4);
+    height: calc(1.8rem * 2.5);
 }
 
 .nav-bar {
@@ -12,7 +21,7 @@
 }
 
 .logo {
-    padding-left: 0;
+    margin-left: 3rem;
 }
 
 .menu-punkte {
@@ -32,6 +41,7 @@
 
 
 @media (max-width: 480px) {/* kleine Smartphones */
+
     .nav-bar {
         margin-left: 0;
         padding-left: 0;
