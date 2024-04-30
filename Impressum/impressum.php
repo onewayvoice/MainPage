@@ -20,7 +20,6 @@
     <div class="menu-punkte"><!-- navigations punkte -->
         <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
-        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
         <a href="../controlls/controls.php">controls</a>
     </div>
 
@@ -36,7 +35,6 @@
     <div class="nav-links" id="navbar">
         <a href="../Mainpage/Mainpage.php">Startseite</a>
         <a href="/Teampage/Teampage.php">Team</a>
-        <a href="/Tagebuch/Teamspace.php">Tagebuch</a>
     </div>
 </div>
 
@@ -74,18 +72,10 @@
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="../Mainpage/Mainpage.php">Home</a></li>
                 <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
                 <li><a href="../Teampage/Teampage.php">Team</a></li>
-                <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
-        </div>
-        <div class="footer-section legal">
-            <h3>Impressum</h3>
-            <p>Name der Firma: Muster GmbH</p>
-            <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
-            <p>Geschäftsführer: Max Mustermann</p>
-            <p>Kontakt: <a href="mailto:info@musterfirma.com">info@musterfirma.com</a></p>
         </div>
     </div>
     <div class="footer-bottom">

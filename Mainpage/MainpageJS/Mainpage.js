@@ -19,7 +19,7 @@ window.onload = function() {
 
     declineBtn.onclick = function() {
         modal.style.display = "none";
-        alert('Sie müssen die Datenschutzerklärung akzeptieren, um die Website nutzen zu können.');
+        alert('Sie müssen die Datenschutz akzeptieren, um die Website nutzen zu können.');
         window.location.href = 'about:blank';
     }
 };
