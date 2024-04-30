@@ -10,6 +10,17 @@
 </head>
 
 <body>
+
+<div id="privacy-modal" class="modal">
+    <div class="modal-content">
+        <h2>Datenschutzerklärung</h2>
+        <p>Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis bieten zu können. Wenn Sie fortfahren, diese Seite zu verwenden, nehmen wir an, dass Sie damit einverstanden sind.</p>
+        <button id="accept">Akzeptieren</button>
+        <button id="decline">Ablehnen</button>
+    </div>
+</div>
+
+
 <div class="nav-bar">
     <div class="logo"><!-- logo eini tian -->
         <a href="Mainpage.php">
@@ -134,11 +145,18 @@
                 <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
         </div>
+        <div class="footer-section legal">
+            <h3>Impressum</h3>
+            <p>Name der Firma: Muster GmbH</p>
+            <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+            <p>Geschäftsführer: Max Mustermann</p>
+            <p>Kontakt: <a href="mailto:info@musterfirma.com">info@musterfirma.com</a></p>
+        </div>
     </div>
-    <div class="footer-bottom"><!-- &copy; ist das logo mit dem C -->
+    <div class="footer-bottom">
         &copy; 2024 MyWebsite | Designed by Me
     </div>
-
 </footer>
+
 <script src="MainpageJS/Mainpage.js"></script>
 </html>

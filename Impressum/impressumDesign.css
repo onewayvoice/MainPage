@@ -1,0 +1,161 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    right: 50px;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+}
+
+/* Hamburger icon hover effect */
+.hamburger:hover {
+    cursor: pointer;
+    opacity: 0.7; /* Simple hover effect */
+}
+
+/* Dropdown menu styles */
+.nav-links {
+    display: none; /* Hide links initially */
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hamburger icon click - assuming JavaScript toggles an 'active' class */
+.nav-bar .active {
+    display: block;
+}
+
+.legal-info h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.legal-info p {
+    font-family: Arial, sans-serif;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 5px;
+}
+
+.legal-info a {
+    color: #5f3ddc;
+    text-decoration: none;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design fuer Smartphones */
+@media (min-width: 300px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        font-size: 20px;
+    }
+
+    .container h2 {
+        font-size: 35px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
+        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
+        background-color: #fff;
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: hidden;
+    }
+
+    .breadcrumb {
+        visibility: hidden;
+    }
+
+    .bild-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-mitglied-bild {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 4%;
+    }
+
+    .team-mitglied-rolle, .team-mitglied-info {
+        font-size: 20px;
+        padding-right: 5%;
+    }
+
+    .title, .title-img-div {
+        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    }
+
+    .footer-content {
+        font-size: 25px;
+    }
+
+    .footer-section.about {
+        font-size: 50px;
+    }
+
+    .footer-bottom {
+        font-size: 25px;
+    }
+}

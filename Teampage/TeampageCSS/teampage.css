@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-.main-Container {
+.teampage-Container {
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -75,11 +75,16 @@ body {
 .container {
     display: flex;
     max-width: 100%;
-    font-size: 20px;
     height: auto;
     justify-content: space-between;
     align-items: center;
     margin: 5% 10% 0 10%;
+}
+
+.teamwerte {
+    font-size: 20px;
+    width: 70%;
+    height: 100%;
 }
 
 .bild-container {
@@ -129,8 +134,9 @@ body {
     display: flex;
     align-items: center;
     font-size: 20px;
+    line-height: 2;
     margin: 10rem auto 2rem auto;
-    max-width: 960px; /* Maximale Breite des Blocks */
+    max-width: 80vw; /* Maximale Breite des Blocks */
 }
 
 .team-mitglied-bild {
@@ -211,7 +217,7 @@ footer {
 
 
 /* Responsive Design fuer Smartphones */
-@media (min-width: 300px) and (max-width: 900px){
+@media (min-width: 300px) and (max-width: 1024px) {
     body {
         font-size: 18px;
     }
@@ -294,45 +300,87 @@ footer {
     }
 }
 
-/* Standards für größere Bildschirme setzen */
-@media (min-width: 769px) {
-    body {
-        font-size: 20px; /* Setzen Sie hier die gewünschte Standard-Schriftgröße fest */
-    }
-
-    .hamburger {
-        display: none; /* Stellen Sie sicher, dass das Hamburger-Menü verborgen bleibt */
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .nav-bar {
-        display: flex; /* Beibehalten oder anpassen der Anzeige für größere Bildschirme */
-        justify-content: space-between;
-        align-items: center;
-    }
-
+@media (min-width: 1028px) and (max-width: 1440px) {
     .menu-punkte a {
-        visibility: visible; /* Alle Menüpunkte sichtbar machen */
+        font-size: 18px;
+    }
+
+    .breadcrumb a {
+        font-size: 15px;
+    }
+
+    .bild-container img {
+        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
+        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
+    }
+}
+
+/* Standard für 4k Bildschirme setzen */
+@media (min-width: 3840px) {
+    .menu-punkte a {
+        display: flex;
+        font-size: 50px;
     }
 
     .breadcrumb {
-        display: flex; /* ursprüngliche Anzeige wiederherstellen */
-        flex-direction: row; /* Richtung zurücksetzen */
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .breadcrumb a {
+        font-size: 35px;
+    }
+
+    .teamwerte {
+        font-size: 60px;
     }
 
     .bild-container img {
         max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
         max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
         object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
-        height: auto; /* Erhält das ursprüngliche Seitenverhältnis des Bildes */
     }
 
-    .title, .title-img-div {
-        flex-basis: auto;
+    .team-mitglied {
+        width: 100%;
+        height: auto;
+        padding-top: 150px;
     }
+
+    .team-mitglied-bild {
+        height: 35rem;
+        width: 35rem;
+    }
+
+    .team-mitglied-rolle {
+        font-size: 60px;
+    }
+
+    .team-mitglied-info {
+        font-size: 60px;
+    }
+
+    .footer-section li {
+        font-size: 40px;
+        padding: 35px;
+    }
+
+    .footer-section h3 {
+        font-size: 50px;
+        padding: 35px;
+    }
+
+    .footer-section p {
+        text-align: justify;
+        padding: 35px;
+        font-size: 40px;
+    }
+
+    .footer-bottom {
+        font-size: 40px;
+    }
+
 }
 
 @media (orientation: landscape) and (max-height: 380px) {
