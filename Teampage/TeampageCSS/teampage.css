@@ -217,7 +217,7 @@ footer {
 
 
 /* Responsive Design fuer Smartphones */
-@media (min-width: 300px) and (max-width: 1024px) {
+@media (min-width: 300px) and (max-width: 600px) {
     body {
         font-size: 18px;
     }
@@ -227,7 +227,7 @@ footer {
     }
 
     .container h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .hamburger {
@@ -298,6 +298,10 @@ footer {
     .footer-bottom {
         font-size: 25px;
     }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    
 }
 
 @media (min-width: 1028px) and (max-width: 1440px) {

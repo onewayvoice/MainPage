@@ -13,6 +13,53 @@ img {
     height: auto;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    right: 50px;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+}
+
+/* Hamburger icon hover effect */
+.hamburger:hover {
+    cursor: pointer;
+    opacity: 0.7; /* Simple hover effect */
+}
+
+/* Dropdown menu styles */
+.nav-links {
+    display: none; /* Hide links initially */
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hamburger icon click - assuming JavaScript toggles an 'active' class */
+.nav-bar .active {
+    display: block;
+}
+
 #container {
     margin: 0 auto;
     max-width: 1200px; /* Maximalbreite für große Bildschirme */
@@ -194,7 +241,7 @@ footer {
 }
 
 .footer-section p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -219,7 +266,101 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (max-width: 600px) {/* kleine Smartphones */
+@media (min-width: 300px) and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
+        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
+        background-color: #fff;
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: hidden;
+    }
+
+    .title-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-img-div {
+        width: 100%;
+        height: 20%;
+    }
+
+    #info-project #info-projct-text {
+        width: 90%;
+        font-size: 20px;
+    }
+
+
+    #erfolge-top {
+        margin-top: 30px;
+    }
+
+    #erfolge-bottom {
+        margin: 0;
+    }
+
+    #erfolge-top, #erfolge-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .svg-container {
+        flex: 0 0 auto;
+    }
+    #title {
+        font-size: 200%;
+        margin-top: 0;
+    }
+
+    .svg-image {
+        width: 150px;
+        height: auto;
+        margin: 0;
+    }
+}
+
+/*
+
+@media (max-width: 600px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -241,12 +382,12 @@ footer {
         align-self: center;
     }
 
-    .title-img-div { /* classe */
+    .title-img-div { 
         margin: 0;
         height: 80%;
         width: 100%;
     }
-    #title-img { /* img ansich */
+    #title-img { 
         object-fit: contain;
     }
 
@@ -291,7 +432,7 @@ footer {
         background-color: white;
         color: #5f3ddc;
     }
-    /*-------------------------------*/
+   
     #erfolge-top {
         margin-top: 30px;
     }
@@ -309,26 +450,26 @@ footer {
     .erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
         display: flex;
         flex-direction: column;
-        /*justify-content: center; /* Horizontale Zentrierung */
-        align-items: center; /* Vertikale Zentrierung */
+        justify-content: center;
+        align-items: center; 
         margin-bottom: 30px;
     }
 
     .svg-container {
-        flex: 0 0 auto; /* Verhindere, dass das SVG wächst */
+        flex: 0 0 auto; 
     }
     #title {
         font-size: 200%;
         margin-top: 0;
     }
 
-
     .svg-image {
-        width: 150px; /* Ändere die Größe des SVG-Bildes */
-        height: auto; /* Halte das Seitenverhältnis beibehalten */
+        width: 150px; 
+        height: auto; 
         margin: 0;
     }
 }
+ */
 
 .modal {
     display: none; /* Hidden by default */
