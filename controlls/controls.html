@@ -41,7 +41,10 @@
     <button onmousedown="keyAction('A', 'down')" onmouseup="keyAction('A', 'up')">A</button>
     <button onmousedown="keyAction('S', 'down')" onmouseup="keyAction('S', 'up')">S</button>
     <button onmousedown="keyAction('D', 'down')" onmouseup="keyAction('D', 'up')">D</button>
+    <button onclick="blackScreen()">Toggle Cam</button>
     <script>
+
+
         function keyAction(key, action) {
             const data = { key: key.toUpperCase(), action: action };
             socket.send(JSON.stringify(data));
@@ -49,8 +52,20 @@
     </script>
 </div>
 <div class="camera">
-    <img id="video" src="http://10.10.30.132:5000/video_feed" alt="video">
+    <div id="black" style="z-index: 0; background-color: black" >
+
+    </div>
+    <div style="z-index: 1">
+        <img id="video" src="http://10.10.30.132:5000/video_feed" alt="video">
+    </div>
 </div>
+
+<script>
+    function blackScreen(){
+        var blackdiv = document.getElementById("black");
+        blackdiv.style.zIndex = 2;
+    }
+</script>
 
 </body>
 </html>
