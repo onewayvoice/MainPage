@@ -313,6 +313,7 @@ footer {
     .title-img-div {
         width: 100%;
         height: 20%;
+        aspect-ratio: 4 / 3;
     }
 
     #info-project #info-projct-text {
