@@ -3,6 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfomobilmeister</title>
+    <meta name="author" content="GolfoMobilMeister">
+    <meta name="description" content="Entwicklung eines ferngesteuerten und autonom fahrenden Fahrzeugs, das auf Spielfeldern mit Hindernissen nach Golfbällen sucht. Unser Team 'GolfoMobilMeister', bestehend aus 4 engagierten Mitgliedern, arbeitet gemeinsam an diesem Projekt, um innovative Lösungen für die Golfball-Suche auf einem kleinen Spielfeld zu entwickeln.">
+    <meta name="keywords" content="autonomes Mini-Auto, ferngesteuertes Fahrzeug, Golfball, technologische Innovation, kleines Auto, Teamprojekt, Robotik, Projekt">
     <link rel="icon" href="../Navbar/NavbarBilder/logo_bild.jpg">
     <link rel="stylesheet" href="MainpageCSS/Mainpage.css">
     <link rel="stylesheet" href="../Navbar/NavbarCSS/navbar.css">
