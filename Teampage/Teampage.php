@@ -20,7 +20,7 @@
             <a href="../Golfocar/Golfcar.php">Golfcar</a>
             <a href="../Teampage/Teampage.php">Team</a>
             <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
-            <a href="../controlls/controls.php">controls</a>
+            <a href="../controlls/controls.html">controls</a>
         </div>
 
 
@@ -35,6 +35,7 @@
         <div class="nav-links" id="navbar">
             <a href="../Mainpage/Mainpage.php">Startseite</a>
             <a href="/Teampage/Teampage.php">Team</a>
+            <a href="../controlls/controls.html">Team</a>
         </div>
     </div>
 

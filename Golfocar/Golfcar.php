@@ -21,7 +21,7 @@
         <div class="menu-punkte"><!-- navigations punkte -->
             <a href="#">Golfcar</a>
             <a href="../Teampage/Teampage.php">Team</a>
-            <a href="../controlls/controls.php">controls</a>
+            <a href="../controlls/controls.html">controls</a>
         </div>
 
         <!-- Hamburger Icon -->
