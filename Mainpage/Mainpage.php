@@ -17,17 +17,44 @@
 </head>
 
 <body>
+
+<div id="privacy-modal" class="modal">
+    <div class="modal-content">
+        <h2>Cookies</h2>
+        <p>Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis bieten zu können. Wenn Sie fortfahren, diese Seite
+            zu verwenden, nehmen wir an, dass Sie damit einverstanden sind.</p>
+        <button id="accept">Akzeptieren</button>
+        <button id="decline">Ablehnen</button>
+    </div>
+</div>
+
+
 <div class="nav-bar">
     <div class="logo"><!-- logo eini tian -->
         <a href="Mainpage.php">
-            <img id="nav-bar-logo" src="MainpageBilder/nav_bar_logo.PNG" alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
+            <img id="nav-bar-logo" src="MainpageBilder/nav_bar_logo.PNG"
+                 alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
         </a>
     </div>
     <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="../Golfocar/Goflcar.php">Golfcar</a>
+        <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
-        <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
+        <a href="../controlls/controls.php">controls</a>
     </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="nav-links" id="navbar">
+        <a href="../Mainpage/Mainpage.php">Startseite</a>
+        <a href="/Teampage/Teampage.php">Team</a>
+    </div>
+
 </div>
 <div id="container">
     <div class="title-bar"> <!-- titel mini text & erstes bild drinnen -->
@@ -40,7 +67,8 @@
                 heroes of transportation grace. So, let's putt-putt our way to a smoother world, one cart at a time!
             </p>
             <div id="button-div">
-                <button onclick="scrollToBottom()" id="title-button">Get in Touch</button>   <!-- um später zum kontakt formular zu kommen / maybee socials zu verlinken -->
+                <button onclick="scrollToBottom()" id="title-button">Get in Touch</button>
+                <!-- um später zum kontakt formular zu kommen / maybee socials zu verlinken -->
             </div>
         </div>
         <div class="title-img-div">
@@ -117,6 +145,8 @@
 
 </div>
 
+<script src="MainpageJS/Mainpage.js"></script>
+<script src="../toggle.js"></script>
 </body>
 <footer>
     <div class="footer-content">
@@ -135,16 +165,13 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
+                <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
                 <li><a href="../Teampage/Teampage.php">Team</a></li>
-                <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
             </ul>
         </div>
     </div>
-    <div class="footer-bottom"><!-- &copy; ist das logo mit dem C -->
+    <div class="footer-bottom">
         &copy; 2024 MyWebsite | Designed by Me
     </div>
-
 </footer>
-<script src="MainpageJS/Mainpage.js"></script>
 </html>

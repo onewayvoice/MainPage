@@ -13,6 +13,53 @@ img {
     height: auto;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    right: 50px;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+}
+
+/* Hamburger icon hover effect */
+.hamburger:hover {
+    cursor: pointer;
+    opacity: 0.7; /* Simple hover effect */
+}
+
+/* Dropdown menu styles */
+.nav-links {
+    display: none; /* Hide links initially */
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hamburger icon click - assuming JavaScript toggles an 'active' class */
+.nav-bar .active {
+    display: block;
+}
+
 #container {
     margin: 0 auto;
     max-width: 1200px; /* Maximalbreite für große Bildschirme */
@@ -60,7 +107,7 @@ img {
 }
 
 #title-text {
-    font-family: Courier, monospace;
+    font-family: Menlo, monospace;
     font-size: 20px;
     color: black;
 }
@@ -176,8 +223,10 @@ footer {
 
 .footer-content {
     display: flex;
+    width: 100%;
+    height: auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-section {
@@ -192,7 +241,7 @@ footer {
 }
 
 .footer-section p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -217,31 +266,244 @@ footer {
     border-top: 1px solid #777;
 }
 
-@media (min-width: 320px) {/* kleine Smartphones */
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+@media (min-width: 300px) and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
     }
-}
 
-@media (min-width: 400px) {/* moderne smartphones */
-    #container {
-        padding: 10px;
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
+        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
+        background-color: #fff;
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: hidden;
     }
 
     .title-bar {
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
     }
-}
 
-@media (min-width: 768px) {/* tablets hochformat */
-    #container {
-        max-width: 90%; /* Nutzt mehr Breite auf sehr großen Bildschirmen */
+    .title {
+        width: 100%;
+        height: auto;
     }
-}
 
-@media (min-width: 1024px) {/* Desktop Styles */
-    body {
+    .title-img-div {
+        width: 100%;
+        height: 20%;
+    }
+
+    #info-project #info-projct-text {
+        width: 90%;
         font-size: 20px;
-        padding: 60px;
     }
+
+
+    #erfolge-top {
+        margin-top: 30px;
+    }
+
+    #erfolge-bottom {
+        margin: 0;
+    }
+
+    #erfolge-top, #erfolge-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .svg-container {
+        flex: 0 0 auto;
+    }
+    #title {
+        font-size: 200%;
+        margin-top: 0;
+    }
+
+    .svg-image {
+        width: 150px;
+        height: auto;
+        margin: 0;
+    }
+}
+
+/*
+
+@media (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .title-bar {
+        margin-top: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 100%;
+        align-self: center;
+    }
+
+    .title-img-div { 
+        margin: 0;
+        height: 80%;
+        width: 100%;
+    }
+    #title-img { 
+        object-fit: contain;
+    }
+
+
+    #pre-title {
+        font-family: Courier, monospace;
+        font-size: 20px;
+    }
+
+    #title {
+        margin: 0;
+        font-family: "Lucida Console ", monospace;
+        font-size: 100px;
+    }
+
+    #title-text {
+        font-family: Courier, monospace;
+        font-size: 20px;
+        color: black;
+    }
+
+
+    #button-div {
+        z-index: 2;
+    }
+
+    #title-button {
+        background-color: #5f3ddc;
+        color: white;
+        border: 1px solid #5f3ddc;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+
+    #title-button:hover {
+        background-color: white;
+        color: #5f3ddc;
+    }
+   
+    #erfolge-top {
+        margin-top: 30px;
+    }
+
+    #erfolge-bottom {
+        margin: 0;
+    }
+
+    #erfolge-top, #erfolge-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .erfolge-geld, .erfolge-zeit, .erfolge-errors, .erfolge-success, .erfolge-coffee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 30px;
+    }
+
+    .svg-container {
+        flex: 0 0 auto; 
+    }
+    #title {
+        font-size: 200%;
+        margin-top: 0;
+    }
+
+    .svg-image {
+        width: 150px; 
+        height: auto; 
+        margin: 0;
+    }
+}
+ */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#decline {
+    background-color: red;
+    color: white;
+}
+
+#accept {
+    background-color: green;
+    color: white;
 }

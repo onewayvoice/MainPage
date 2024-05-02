@@ -6,88 +6,103 @@
     <link rel="icon" href="../Navbar/NavbarBilder/logo_bild.jpg">
     <link rel="stylesheet" href="TeampageCSS/teampage.css">
     <link rel="stylesheet" href="../Navbar/NavbarCSS/navbar.css">
-
 </head>
 <body>
+<div class="teampage-Container">
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="../Mainpage/Mainpage.php">
+                <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG"
+                     alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
+            </a>
+        </div>
+        <div class="menu-punkte"><!-- navigations punkte -->
+            <a href="../Golfocar/Golfcar.php">Golfcar</a>
+            <a href="../Teampage/Teampage.php">Team</a>
+            <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
+            <a href="../controlls/controls.php">controls</a>
+        </div>
 
-<!-- Navbar -->
-<div class="nav-bar">
-    <div class="logo">
-        <a href="../Mainpage/Mainpage.php">
-            <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG"
-                 alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
-        </a>
-    </div>
-    <div class="menu-punkte"><!-- navigations punkte -->
-        <a href="../Golfcar/Golfcar.php">Golfcar</a>
-        <a href="#">Team</a>
-        <a href="../Tagebuch/TEamspace.php" target="_blank">Tagebuch</a>
-    </div>
 
-</div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-<!-- Breadcrumb -->
-<nav class="breadcrumb" id="teamPageBreadCrumb">
-    <a href="../Mainpage/Mainpage.php">Startseite</a>
-    <a href="" style="font-weight: bold">&nbsp;Unternehmen</a>
-</nav>
-
-<!-- Unternehmenswerte -->
-<div class="container">
-    <div>
-        <h2>Unsere<br>Unternehmenswerte</h2>
-        <p>Wir schaffen Mehrwert für unsere Kunden.</p>
-        <p>Wir arbeiten sicher.</p>
-        <p>Wir geben Vertrauen und Wertschätzung.</p>
-        <p>Wir sind nachhaltig.</p>
+        <!-- Dropdown Menu -->
+        <div class="nav-links" id="navbar">
+            <a href="../Mainpage/Mainpage.php">Startseite</a>
+            <a href="/Teampage/Teampage.php">Team</a>
+        </div>
     </div>
 
-    <div class="bild-container" id="teambild">
-        <img src="photo.png" alt="Bildbeschreibung" width="770" height="420">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" id="teamPageBreadCrumb">
+        <a href="../Mainpage/Mainpage.php">Startseite</a>
+        <a href="" style="font-weight: bold">&nbsp;Team</a>
+    </nav>
+
+    <!-- Unternehmenswerte -->
+    <div class="container">
+        <div class="teamwerte">
+            <h2>Unsere<br>Unternehmenswerte</h2><br>
+            <p>Wir schaffen Mehrwert für unsere Kunden.</p><br>
+            <p>Wir arbeiten sicher.</p><br>
+            <p>Wir geben Vertrauen und Wertschätzung.</p><br>
+            <p>Wir sind nachhaltig.</p><br>
+        </div>
+
+        <div class="bild-container" id="teambild">
+            <img src="../preview_querkant.jpg" alt="Bildbeschreibung">
+        </div>
     </div>
-</div>
 
-<!-- Teammitglieder -->
-<div class="team-mitglied">
-    <img src="Matthi.jpg" alt="[NAME]" class="team-mitglied-bild">
-    <div class="team-mitglied-info">
-        <h3>Matthias Zelger</h3>
-        <p class="team-mitglied-rolle">Projektleiter</p>
-        <p>*Irgenda Text*</p>
+    <!-- Teammitglieder -->
+    <div class="team-mitglied">
+        <img src="/Teampage/TeampageBilder/Matthi.jpg" alt="[NAME]" class="team-mitglied-bild">
+        <div class="team-mitglied-info">
+            <h3>Matthias Zelger</h3>
+            <p class="team-mitglied-rolle">Projektleiter</p>
+            <p>*Irgenda Text*</p>
+        </div>
     </div>
-</div>
 
-<div class="team-mitglied">
-    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
-    <div class="team-mitglied-info">
-        <h3>Miguel Angel Gasser</h3>
-        <p class="team-mitglied-rolle">Webdesigner</p>
-        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
-            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+    <div class="team-mitglied">
+        <img src="/Teampage/TeampageBilder/Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
+        <div class="team-mitglied-info">
+            <h3>Miguel Angel Gasser</h3>
+            <p class="team-mitglied-rolle">Webdesigner</p>
+            <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung
+                im Bereich der Websiten entwicklung
+                war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+        </div>
     </div>
-</div>
 
-<div class="team-mitglied">
-    <img src="Vid.jpg" alt="[NAME]" class="team-mitglied-bild">
-    <div class="team-mitglied-info">
-        <h3>David Erlacher</h3>
-        <p class="team-mitglied-rolle">Automechaniker</p>
-        <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung im Bereich der Websiten entwicklung
-            war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+    <div class="team-mitglied">
+        <img src="/Teampage/TeampageBilder/Vid.jpg" alt="[NAME]" class="team-mitglied-bild">
+        <div class="team-mitglied-info">
+            <h3>David Erlacher</h3>
+            <p class="team-mitglied-rolle">Automechaniker</p>
+            <p>Miguel nimmt neben dem Webdesign auch die Rolle des Vize Projektleiters ein. Seine Jahre lange Erfahrung
+                im Bereich der Website Entwicklung
+                war einer der Hauptgründe, dass wir die Website fertigstellen konnten.</p>
+        </div>
     </div>
-</div>
 
-<div class="team-mitglied">
-    <img src="Miggi.jpg" alt="[NAME]" class="team-mitglied-bild">
-    <div class="team-mitglied-info">
-        <h3>Daniel Stocker</h3>
-        <p class="team-mitglied-rolle">Webdesigner</p>
-        <p>LOL</p>
+    <div class="team-mitglied">
+        <img src="/Teampage/TeampageBilder/Daniel.jpg" alt="[NAME]" class="team-mitglied-bild">
+        <div class="team-mitglied-info">
+            <h3>Daniel Stocker</h3>
+            <p class="team-mitglied-rolle">Webdesigner</p>
+            <p>LOL</p>
+        </div>
     </div>
-</div>
 
-
+    <script src="../toggle.js"></script>
 </body>
+
 <footer>
     <div class="footer-content">
         <div class="footer-section about">
@@ -105,15 +120,13 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="../Mainpage/Mainpage.php">Home</a></li>
-                <li><a href="../Golfocar/Goflcar.php">Golfcar</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a></li>
+                <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
+                <li><a href="../Teampage/Teampage.php">Team</a></li>
             </ul>
         </div>
     </div>
-    <div class="footer-bottom"><!-- &copy; ist das logo mit dem C -->
+    <div class="footer-bottom">
         &copy; 2024 MyWebsite | Designed by Me
     </div>
-
 </footer>
 </html>
