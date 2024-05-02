@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>controls</title>
-    <link rel="stylesheet" href="controls.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.8.1/nipplejs.min.js"></script>
+<head> <meta charset="UTF-8">
+    <link rel="stylesheet" href="k.css">
+    <title>contorlls</title>
+    <script>
+        const socket = new WebSocket("ws://10.10.30.132:8765");
+
+        socket.onopen = function(event) {
+            document.getElementById("status").innerText = "Connected!";
+        };
+
+        socket.onclose = function(event) {
+            document.getElementById("status").innerText = "Disconnected!";
+        };
+
+        socket.onerror = function(event) {
+            document.getElementById("status").innerText = "Error!";
+        };
+        document.addEventListener('keydown', function(event) {
+            if (['W', 'A', 'S', 'D'].includes(event.key.toUpperCase())) {
+                const data = { key: event.key.toUpperCase(), action: 'down' };
+                socket.send(JSON.stringify(data));
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (['W', 'A', 'S', 'D'].includes(event.key.toUpperCase())) {
+                const data = { key: event.key.toUpperCase(), action: 'up' };
+                socket.send(JSON.stringify(data));
+            }
+        });
+
+    </script>
 </head>
+
 <body>
-<div id="containerAlle">
-    <div id="joystick-container">
-
-        
-    </div>
-    <div id="containeriframe">
-        <img src="/stream" style="width:100%; height: auto;">
-    </div>
-
+<div class="constrolls">
+    <p id="status">Loading...</p>
+    <p>Drücken Sie W, A, S oder D, um die LEDs zu steuern.</p>
+    <button onmousedown="keyAction('W', 'down')" onmouseup="keyAction('W', 'up')">W</button>
+    <button onmousedown="keyAction('A', 'down')" onmouseup="keyAction('A', 'up')">A</button>
+    <button onmousedown="keyAction('S', 'down')" onmouseup="keyAction('S', 'up')">S</button>
+    <button onmousedown="keyAction('D', 'down')" onmouseup="keyAction('D', 'up')">D</button>
+    <script>
+        function keyAction(key, action) {
+            const data = { key: key.toUpperCase(), action: action };
+            socket.send(JSON.stringify(data));
+        }
+    </script>
+</div>
+<div class="camera">
+    <img id="video" src="http://10.10.30.132:5000/video_feed" alt="video">
 </div>
 
-
-<script src="controls.js"></script>
 </body>
-
 </html>
