@@ -24,6 +24,7 @@ window.onload = function() {
     }
 
     acceptBtn.onclick = function() {
+        console.log("test");
         // cookie wird gesetzt
         // Ein neues Ablaufdatum für das Cookie festlegen
         const expirationDate = new Date();
@@ -33,6 +34,7 @@ window.onload = function() {
         document.cookie = 'meinCookie=wert; expires=' + expirationDate.toUTCString() + '; path=/';
 
         console.log('Ein neues Cookie wurde für das nächste Mal erstellt.');
+        modal.style.display = "none";
     }
 
     declineBtn.onclick = function() {
