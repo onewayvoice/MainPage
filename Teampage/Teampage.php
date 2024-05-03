@@ -18,9 +18,9 @@
         </div>
         <div class="menu-punkte"><!-- navigations punkte -->
             <a href="../Golfocar/Golfcar.php">Golfcar</a>
-            <a href="../Teampage/Teampage.php">Team</a>
+            <a href="#">Team</a>
             <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
-            <a href="../controlls/controls.html">controls</a>
+            <a href="../controlls/controls.php">controls</a>
         </div>
 
 
@@ -33,9 +33,10 @@
 
         <!-- Dropdown Menu -->
         <div class="nav-links" id="navbar">
-            <a href="../Mainpage/Mainpage.php">Startseite</a>
+            <a href="../Mainpage/Mainpage.php">Startseit</a>
+            <a href="../Golfocar/Golfcar.php">Golfcar</a>
             <a href="/Teampage/Teampage.php">Team</a>
-            <a href="../controlls/controls.html">Team</a>
+            <a href="../controlls/controls.php">Controls</a>
         </div>
     </div>
 
