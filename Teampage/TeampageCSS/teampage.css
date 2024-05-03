@@ -91,6 +91,11 @@ body {
     margin-left: 5%;
 }
 
+#teambild {
+    height: auto;
+    width: 100%;
+}
+
 .breadcrumb {
     display: flex;
     margin-top: 5px;
@@ -155,8 +160,8 @@ body {
 }
 
 .team-mitglied-rolle {
-    font-weight: bold; /* Hebt die Rolle hervor */
-    margin-bottom: .5rem; /* Abstand zwischen Rolle und Beschreibung */
+    font-weight: bold;
+    margin-bottom: .5rem;
 }
 
 /* FOOTER CSS */
@@ -223,7 +228,9 @@ footer {
     }
 
     .container {
+        display: flex;
         font-size: 20px;
+        flex-direction: column;
     }
 
     .container h2 {
@@ -267,44 +274,124 @@ footer {
         visibility: hidden;
     }
 
-    .bild-container img {
+    #teambild {
         width: 100%;
         height: auto;
     }
 
+    .team-mitglied {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
     .team-mitglied-bild {
-        width: 8rem;
-        height: 8rem;
-        margin-left: 4%;
+        width: 10rem;
+        height: 10rem;
     }
 
     .team-mitglied-rolle, .team-mitglied-info {
-        font-size: 20px;
+        font-size: 15px;
         padding-right: 5%;
     }
 
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
-    }
-
     .footer-content {
-        font-size: 25px;
+        font-size: 15px;
     }
 
-    .footer-section.about {
-        font-size: 50px;
+    .footer-section p {
+        font-size: 15px;
     }
 
     .footer-bottom {
-        font-size: 25px;
+        font-size: 15px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-    
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teamwerte {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
+        top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        background-color: #fff;
+        width: calc(100% - 20px);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-punkte a {
+        visibility: hidden;
+    }
+
+    .breadcrumb {
+        visibility: hidden;
+    }
+
+    .team-mitglied {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .team-mitglied-bild {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .team-mitglied-info {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-size: 30px;
+    }
+
+    .footer-section h3 {
+        font-size: 30px;
+    }
+
+    .footer-section p {
+        font-size: 30px;
+    }
+
+    .footer-bottom {
+        font-size: 30px;
+    }
 }
 
-@media (min-width: 1028px) and (max-width: 1440px) {
+@media (min-width: 1800px) {
     .menu-punkte a {
         font-size: 18px;
     }
@@ -313,17 +400,24 @@ footer {
         font-size: 15px;
     }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 300px;
+    }
+
     .bild-container img {
-        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
-        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
+        display: flex;
+        width: 100%;
+        height: auto;
     }
 }
 
 /* Standard für 4k Bildschirme setzen */
-@media (min-width: 3840px) {
+@media (min-width: 1930px) {
     .menu-punkte a {
         display: flex;
-        font-size: 50px;
+        font-size: 80px;
     }
 
     .breadcrumb {
@@ -333,7 +427,7 @@ footer {
     }
 
     .breadcrumb a {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .teamwerte {
@@ -423,12 +517,5 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-}
-
-/* Media Queries für eine verbesserte Responsivität */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
     }
 }

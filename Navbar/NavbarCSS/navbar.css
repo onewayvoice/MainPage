@@ -25,12 +25,11 @@
 }
 
 .menu-punkte {
-    text-align: center; /* Zentriere die Links horizontal */
     display: flex; /*damit links am richtigen ort stehen*/
-    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
     gap: 40px;
     width: 40%;
-    margin-left: auto; /*das div wird ganz links plaziert*/
     align-items: center; /* Zentriere den Inhalt vertikal */
     justify-content: space-around; /*links bekommen alle den gleichen abstand*/
 }
@@ -38,6 +37,7 @@
 .menu-punkte a {
     display: inline-block; /* Stelle sicher, dass die Links nebeneinander stehen */
     margin: 0 10px; /* Füge horizontalen Abstand zwischen den Links hinzu */
+    text-decoration: none;
 }
 
 
@@ -57,9 +57,19 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1027px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     .nav-bar {
-        width: 70%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    #nav-bar-logo {
+        height: 8rem;
+        width: 15rem;
     }
 
     .menu-punkte {

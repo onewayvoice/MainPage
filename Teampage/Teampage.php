@@ -55,8 +55,8 @@
             <p>Wir sind nachhaltig.</p><br>
         </div>
 
-        <div class="bild-container" id="teambild">
-            <img src="../preview_querkant.jpg" alt="Bildbeschreibung">
+        <div class="bild-container">
+            <img src="../preview_querkant.jpg" alt="Bildbeschreibung" id="teambild">
         </div>
     </div>
 
