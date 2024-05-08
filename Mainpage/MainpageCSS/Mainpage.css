@@ -5,7 +5,7 @@
 
 header.nav-bar {
     position: fixed;
-    background-color: #333 !important;
+    background-color: white !important;
     width: calc(100% - 20px);
 }
 
