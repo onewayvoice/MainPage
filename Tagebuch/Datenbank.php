@@ -19,6 +19,7 @@ class Datenbank extends \PDO
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
             \PDO::ATTR_EMULATE_PREPARES   => false,
         ];
+
         try {
             $this->pdo = new \PDO($dsn, $this->user, $this->pass, $options);
         } catch (\PDOException $e) {
@@ -47,12 +48,53 @@ class Datenbank extends \PDO
         return $stmt->fetchAll();
     }
 
-    public function addEintrag($name, $beschreibung, $hours, $date) {
-        $sql = "INSERT INTO eintrag (name, beschreibung, hours, date) VALUES (?, ?, ?, ?)";
+    public function addEintrag($Name, $beschreibung, $arbeitsstunden, $Datum) {
+        $sql = "INSERT INTO eintrag (Name, beschreibung, arbeitsstunden, Datum) VALUES (?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$name, $beschreibung, $hours, $date]);
+        $stmt->execute([$Name, $beschreibung, $arbeitsstunden, $Datum]);
         return $this->pdo->lastInsertId();  // Gibt die ID des neu eingefügten Eintrags zurück
     }
+
+    public function deleteEintraege($ids) {
+        $in  = str_repeat('?,', count($ids) - 1) . '?';
+        $sql = "DELETE FROM eintrag WHERE EintragID IN ($in)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($ids);
+    }
+    public function getUserByUsername($username) {
+        $sql = "SELECT * FROM person WHERE name = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$username]);
+        return $stmt->fetch();  // Gibt false zurück, wenn kein Benutzer gefunden wird
+    }
+
+    public function getPasswordByUsername($username) {
+        $sql = "SELECT passwort FROM person WHERE name = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$username]);
+        $result = $stmt->fetchColumn();  // Gibt das Passwort zurück oder false, wenn kein Benutzer gefunden wird
+        return $result;
+    }
+
+    public function getEintraegePaged($username, $limit, $offset) {
+        if ($username === "admin") {
+            $sql = "SELECT * FROM eintrag LIMIT ? OFFSET ?";
+        } else {
+            $sql = "SELECT * FROM eintrag WHERE name = ? LIMIT ? OFFSET ?";
+        }
+        $stmt = $this->pdo->prepare($sql);
+        if ($username === "admin") {
+            $stmt->execute([$limit, $offset]);
+        } else {
+            $stmt->execute([$username, $limit, $offset]);
+        }
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+
+
+
 }
 
 ?>

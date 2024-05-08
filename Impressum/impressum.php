@@ -13,7 +13,7 @@
 <div class="nav-bar">
     <div class="logo">
         <a href="../Mainpage/Mainpage.php">
-            <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG"
+            <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/alt.PNG"
                  alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
         </a>
     </div>

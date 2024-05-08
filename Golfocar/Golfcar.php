@@ -14,30 +14,26 @@
     <div class="nav-bar">
         <div class="logo"><!-- logo eini tian -->
             <a href="../Mainpage/Mainpage.php">
-                <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/nav_bar_logo.PNG"
+                <img id="nav-bar-logo" src="../Mainpage/MainpageBilder/neulogo.jpg"
                      alt="Eine illustration eines Golfautos. Darunter steht noch das Wort Car.">
             </a>
         </div>
-        <div class="menu-punkte"><!-- navigations punkte -->
-            <a href="#">Golfcar</a>
-            <a href="../Teampage/Teampage.php">Team</a>
-            <a href="../Tagebuch/Teamspace.php" target="_blank">Tagebuch</a>
-            <a href="../controlls/controls.php">controls</a>
-        </div>
 
-        <!-- Hamburger Icon -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <!-- Dropdown Menu -->
-        <div class="nav-links" id="navbar">
-            <a href="../Mainpage/Mainpage.php">Startseit</a>
+        <div class="menu-punkte">
             <a href="../Golfocar/Golfcar.php">Golfcar</a>
-            <a href="/Teampage/Teampage.php">Team</a>
-            <a href="../controlls/controls.php">Controls</a>
+            <a href="../Teampage/Teampage.php">Team</a>
+            <a href="../Tagebuch/tagebuch.php">Tagebuch</a>
+            <a href="../controlls/controls.html">Controls</a>
+        </div>
+        <!-- Dropdown-Menü für kleinere Bildschirme -->
+        <div class="dropdown-menu">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <a href="../Golfocar/Golfcar.php">Golfcar</a>
+                <a href="../Teampage/Teampage.php">Team</a>
+                <a href="../Tagebuch/tagebuch.php" target="_blank">Tagebuch</a>
+                <a href="../controlls/controls.html" target="_blank">Controls</a>
+            </div>
         </div>
 
     </div>
@@ -238,9 +234,10 @@
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="../Mainpage/Mainpage.php">Home</a></li>
                 <li><a href="../Golfocar/Golfcar.php">Golfcar</a></li>
                 <li><a href="../Teampage/Teampage.php">Team</a></li>
+                <li><a href="../Tagebuch/tagebuch.php">Tagebuch</a></li>
+                <li><a href="../controlls/controls.html">controls</a></li>
             </ul>
         </div>
     </div>
