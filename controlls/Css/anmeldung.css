@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6c6767;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Richtet Kinder vertikal untereinander aus */
+    justify-content: center; /* Zentriert Kinder horizontal */
+    align-items: center; /* Zentriert Kinder vertikal */
+    height: 100vh; /* Stellt sicher, dass der Body den gesamten Viewport einnimmt */
+}
+.diary-container, .table-container {
+    width: 90%;
+    max-width: 800px;
+    max-height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px; /* Abstand zwischen den Containern */
+}
+
+.diary-container{
+    padding-top: 40px;
+}
+
+/* Formularstil */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Breite abzüglich Padding und Border */
+}
+
+button {
+    background-color: #5f3ddc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #5f3ddc;
+}
+
+.disabled-button {
+    background-color: #6c6c6c; /* Set the background color to gray */
+    color: white; /* Set the text color to a darker shade of gray */
+    cursor: not-allowed; /* Change the cursor to indicate the button is disabled */
+}
+
+.disabled-button:hover {
+    background-color: #6c6c6c; /* Set the background color to gray */
+    color: white; /* Set the text color to a darker shade of gray */
+    cursor: not-allowed; /* Change the cursor to indicate the button is disabled */
+}
+
+/* Stil für das Einträge löschen Formular und die Tabelle */
+.entries-container {
+    width: 100%;
+    overflow-x: auto; /* Ermöglicht Scrollen, wenn die Tabelle zu breit ist */
+}
+
+.entries-table {
+    width: 100%;
+    border-collapse: collapse; /* Entfernt doppelte Ränder */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.entries-table th, .entries-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.entries-table th {
+    background-color: #6948de;
+    color: white;
+}
+
+.entries-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Stil für den Kopfbereich */
+th {
+    position: sticky;
+    top: 0;
+}
+
+/* Stil für ausgewählte Zeilen */
+
+
+.selected-row {
+    background-color: #617b94; /* Hellblau als Hintergrundfarbe für ausgewählte Zeilen */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: calc(100% - 20px); /* Stellen Sie sicher, dass der Header die gesamte Breite einnimmt */
+    z-index: 1000; /* Stellt den Header über andere Inhalte */
+}
+
+
+#header-content {
+    display: flex; /* Flexbox-Layout für das Formular */
+    justify-content: space-between; /* Inhalt nach rechts ausrichten */
+    align-items: center; /* Vertikale Ausrichtung der Formularelemente */
+    margin: 0; /* Entfernt den Standardaußenabstand */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.filter-container{
+    display: contents;
+    justify-content: space-between;
+}
+
+select {
+    height: 40px;
+}
+
+.filter-select {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+
+.filter-select2 {
+    width: calc(50% - 5px);
+}
