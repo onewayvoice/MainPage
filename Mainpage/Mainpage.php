@@ -37,7 +37,7 @@
         <a href="../Golfocar/Golfcar.php">Golfcar</a>
         <a href="../Teampage/Teampage.php">Team</a>
         <a href="../Tagebuch/tagebuch.php">Tagebuch</a>
-        <a href="../controlls/controls.html">Controls</a>
+        <a href="../controlls/controls.php">Controls</a>
     </div>
     <!-- Dropdown-Menü für kleinere Bildschirme -->
     <div class="dropdown-menu">
@@ -46,7 +46,7 @@
             <a href="../Golfocar/Golfcar.php">Golfcar</a>
             <a href="../Teampage/Teampage.php">Team</a>
             <a href="../Tagebuch/tagebuch.php" target="_blank">Tagebuch</a>
-            <a href="../controlls/controls.html" target="_blank">Controls</a>
+            <a href="../controlls/controls.php" target="_blank">Controls</a>
         </div>
     </div>
 
