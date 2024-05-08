@@ -57,17 +57,22 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1027px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     .nav-bar {
-        width: 70%;
+        width: 100%;
     }
 
-    .menu-punkte {
-        font-size: 20px; /* Anpassung der Schriftgröße für mittlere Bildschirme */
+    .logo {
+        margin-left: 0;
+    }
+
+    #nav-bar-logo {
+        height: auto;
+        width: 50%;
     }
 }
 
-@media (min-width: 1028px) {
+@media (min-width: 1024px) {
     #nav-bar-logo {
         width: 35%;
         height: auto;

@@ -217,13 +217,13 @@ footer {
 
 
 /* Responsive Design fuer Smartphones */
-@media (min-width: 300px) and (max-width: 600px) {
+@media (max-width: 600px) {
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .container {
-        font-size: 20px;
+        flex-direction: column;
     }
 
     .container h2 {
@@ -272,6 +272,11 @@ footer {
         height: auto;
     }
 
+    .team-mitglied {
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .team-mitglied-bild {
         width: 8rem;
         height: 8rem;
@@ -283,152 +288,110 @@ footer {
         padding-right: 5%;
     }
 
-    .title, .title-img-div {
-        flex-basis: 100%; /* Stapelt Elemente vertikal auf kleineren Bildschirmen */
+    .footer-content p {
+        font-size: 20px;
     }
 
-    .footer-content {
+    .footer-section h3 {
         font-size: 25px;
-    }
-
-    .footer-section.about {
-        font-size: 50px;
     }
 
     .footer-bottom {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
-    
-}
-
-@media (min-width: 1028px) and (max-width: 1440px) {
-    .menu-punkte a {
-        font-size: 18px;
+    body {
+        font-size: 30px;
     }
 
-    .breadcrumb a {
-        font-size: 15px;
+    .container {
+        flex-direction: column;
     }
 
-    .bild-container img {
-        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
-        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
-    }
-}
-
-/* Standard für 4k Bildschirme setzen */
-@media (min-width: 3840px) {
-    .menu-punkte a {
-        display: flex;
-        font-size: 50px;
-    }
-
-    .breadcrumb {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .breadcrumb a {
+    .container h2 {
         font-size: 35px;
     }
 
-    .teamwerte {
-        font-size: 60px;
-    }
-
-    .bild-container img {
-        max-width: 100%; /* Stellt sicher, dass die Breite des Bildes nie größer als das umgebende Element ist */
-        max-height: 100vh; /* Optional: Begrenzt die Höhe des Bildes auf die Höhe des Viewports */
-        object-fit: cover; /* Passt das Bild an, um den Container zu füllen, ohne das Seitenverhältnis zu verzerren */
-    }
-
-    .team-mitglied {
-        width: 100%;
-        height: auto;
-        padding-top: 150px;
-    }
-
-    .team-mitglied-bild {
-        height: 35rem;
-        width: 35rem;
-    }
-
-    .team-mitglied-rolle {
-        font-size: 60px;
-    }
-
-    .team-mitglied-info {
-        font-size: 60px;
-    }
-
-    .footer-section li {
-        font-size: 40px;
-        padding: 35px;
-    }
-
-    .footer-section h3 {
-        font-size: 50px;
-        padding: 35px;
-    }
-
-    .footer-section p {
-        text-align: justify;
-        padding: 35px;
-        font-size: 40px;
-    }
-
-    .footer-bottom {
-        font-size: 40px;
-    }
-
-}
-
-@media (orientation: landscape) and (max-height: 380px) {
-    /* Anpassungen speziell für Handys im Querformat */
-    .nav-bar .menu-punkte, .nav-links {
-        /* Hamburger Menü sichtbar machen und reguläre Menüpunkte ausblenden */
-        display: none;
+    .container p {
+        font-size: 30px;
     }
 
     .hamburger {
         display: block;
-        right: 20px;
+        position: absolute;
+        right: 10px; /* Postive Werte, um das Icon innerhalb des sichtbaren Bereichs zu verschieben */
         top: 10px;
+        z-index: 2; /* Stellen Sie sicher, dass das Hamburger-Icon über dem Dropdown-Menü liegt */
     }
 
-    .container, .team-mitglied {
-        /* Flexbox-Anpassungen, um Inhalte besser zu organisieren */
-        flex-direction: column;
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 10px; /* Setzen Sie es auf denselben Wert wie das Hamburger-Menü, um es auszurichten */
+        top: 50px; /* Der Wert sollte der Höhe des Hamburger-Menü-Icons plus etwas Abstand entsprechen */
+        background-color: #fff;
+        width: calc(100% - 20px); /* Passen Sie die Breite an, sodass sie innerhalb der Seitenränder bleibt */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .team-mitglied-bild {
-        /* Bilder kleiner machen, damit sie besser ins Layout passen */
-        width: 8rem;
-        height: 8rem;
+    .menu-punkte a {
+        visibility: hidden;
+    }
+
+    .breadcrumb {
+        visibility: hidden;
     }
 
     .bild-container img {
-        /* Sicherstellen, dass Hauptbilder vollständig sichtbar sind */
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
-    .footer-content, .footer-section {
-        /* Footer-Elemente für kleine Bildschirme optimieren */
+    .team-mitglied {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 30px;
+    }
+
+    .team-mitglied-bild {
+        width: 14rem;
+        height: 14rem;
+        margin-left: 4%;
+    }
+
+    .team-mitglied-rolle, .team-mitglied-info {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content p {
+        font-size: 30px;
+    }
+
+    .footer-section h3 {
+        font-size: 35px;
+    }
+
+    .footer-bottom {
+        font-size: 30px;
     }
 }
 
-/* Media Queries für eine verbesserte Responsivität */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column; /* Ändert die Flex-Richtung für kleinere Bildschirme */
-    }
+@media screen {
+    
 }
