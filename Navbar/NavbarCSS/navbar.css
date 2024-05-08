@@ -1,109 +1,87 @@
-* {
-    font-family: Bahnschrift, serif;
+:root {
+    --logo-width: 2.4rem;
 }
 
+
 #nav-bar-logo {
-    width: 20rem;
-    min-width: 20rem;
+    /*
+    width: 35%;
     height: auto;
+     */
+    width: calc(var(--logo-width) * 3.4);
+    height: calc(1.8rem * 2.5);
 }
 
 .nav-bar {
-    overflow: visible;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 1px 1px black;
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px; /* Fügt horizontalen Abstand hinzu */
-    box-sizing: border-box; /* Stellt sicher, dass Padding und Border in die Breite einbezogen werden */
+    width: 60%;
+    margin: 0 auto;
+    align-items: stretch;
+    background: transparent;
 }
 
-#nav-bar-logo {
-    width: 20rem;
-    height: auto;
+.logo {
+    margin-left: 3rem;
 }
 
 .menu-punkte {
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    text-align: center; /* Zentriere die Links horizontal */
+    display: flex; /*damit links am richtigen ort stehen*/
+    font-size: 15px;
+    gap: 40px;
+    width: 40%;
+    margin-left: auto; /*das div wird ganz links plaziert*/
+    align-items: center; /* Zentriere den Inhalt vertikal */
+    justify-content: space-around; /*links bekommen alle den gleichen abstand*/
 }
 
 .menu-punkte a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 15px; /* Fügt Abstand um den Linktext hinzu */
-    border-radius: 5px; /* Weiche Ecken für Links */
-    transition: background-color 0.3s, color 0.3s; /* Sanfter Übergang für Hover-Effekte */
+    display: inline-block; /* Stelle sicher, dass die Links nebeneinander stehen */
+    margin: 0 10px; /* Füge horizontalen Abstand zwischen den Links hinzu */
 }
 
-.menu-punkte a:hover {
-    background-color: #f0f0f0; /* Leichter Hintergrund-Hover-Effekt */
-    color: #333; /* Dunklere Textfarbe beim Hover */
-}
 
-/* Versteckt Dropdown-Menü initial */
-.dropdown-menu {
-    display: none;
-    position: relative; /* Ermöglicht absolute Positionierung der Dropdown-Inhalte */
-}
+@media (max-width: 600px) {/* kleine Smartphones */
+    .nav-bar {
+        margin-left: 0;
+        padding-left: 0;
+    }
 
-@media (max-width: 900px) {
-    #nav-bar-logo {
-        width: 15rem; /* Verkleinern des Logos */
+    .logo {
+        margin: 0;
+        padding: 0;
     }
 
     .menu-punkte {
-        display: none; /* Verbirgt die normale Menüleiste */
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-bar {
+        width: 100%;
     }
 
-    .dropdown-menu {
-        display: flex; /* Flexbox für vertikale Zentrierung und Ausrichtung am Ende */
-        align-items: center;
-        justify-content: flex-end; /* Ausrichtung am rechten Rand */
+    .logo {
+        margin-left: 0;
     }
 
-    .dropdown-menu button {
-        background-color: white;
-        color: black;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px; /* Erhöhte Lesbarkeit */
-        outline: none; /* Entfernt den Fokus-Umriss */
-        border-radius: 5px; /* Weiche Ecken für den Button */
+    #nav-bar-logo {
+        height: auto;
+        width: 50%;
     }
+}
 
-    .dropdown-content {
-        top: 2rem;
-        display: none;
-        position: absolute;
-        right: 0; /* Ausrichtung am rechten Rand */
-        background-color: white;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
-        border-radius: 5px; /* Weiche Ecken für das Dropdown */
-        overflow: hidden; /* Verhindert das Anzeigen von Inhalten außerhalb der Grenzen */
-    }
-
-    .dropdown-content a {
-        display: block;
-        padding: 10px 20px;
+@media (min-width: 1024px) {
+    .menu-punkte a {
+        font-size: 18px;
         text-decoration: none;
-        color: black;
-        transition: background-color 0.3s; /* Sanfter Übergang für Hover-Effekte */
     }
 
-    .dropdown-content a:hover {
-        background-color: #f0f0f0;
-    }
-
-    .dropdown-menu:hover .dropdown-content {
-        display: block;
+    .container {
+        display: flex;
+        width: 90%;
+        gap: 30px;
+        justify-content: space-around;
     }
 }
