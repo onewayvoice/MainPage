@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 header.nav-bar {
@@ -72,7 +73,7 @@ header.nav-bar {
 }
 
 #title-button {
-    background-color: #6c6767;
+    background-color: #6948de;
     color: white;
     border: 1px solid #6948de;
     padding: 10px 20px;
