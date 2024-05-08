@@ -392,6 +392,14 @@ footer {
     }
 }
 
-@media screen {
-    
+@media (min-width: 1024px) {
+    body {
+        font-size: 30px;
+    }
+
+    .bild-container img {
+        width: 90%;
+        height: auto;
+    }
+    .
 }
