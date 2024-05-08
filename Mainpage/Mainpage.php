@@ -60,7 +60,7 @@
 <div id="container">
     <div class="title-bar"> <!-- titel mini text & erstes bild drinnen -->
         <div class="title">
-            <p id="pre-title">WELCOME TO THE PROJECT</p>
+            <p id="pre-title">WELCOMeeeeeE TO THE PROJECT</p>
             <p id="title">The Golf Cart<br>REBELLION</p>
             <p id="title-text">
                 In a world where chaos ruled, golf carts united, wheeling through greens, streets, and malls alike.
