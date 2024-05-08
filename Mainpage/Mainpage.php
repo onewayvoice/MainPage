@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="MainpageCSS/Mainpage.css">
     <link rel="stylesheet" href="../Navbar/NavbarCSS/navbar.css">
 
+
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
