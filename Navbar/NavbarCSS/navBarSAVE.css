@@ -1,0 +1,80 @@
+
+
+:root {
+    --logo-width: 2.4rem;
+}
+
+
+#nav-bar-logo {
+    /*
+    width: 35%;
+    height: auto;
+     */
+    width: 5rem;
+    min-width: 5rem;
+    height: auto;
+}
+
+.nav-bar {
+    height: auto;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: stretch;
+    background: transparent;
+}
+
+.logo {
+    margin-left: 3rem;
+    width: 100px;
+}
+
+.menu-punkte {
+    text-align: center; /* Zentriere die Links horizontal */
+    display: flex; /*damit links am richtigen ort stehen*/
+    font-size: 15px;
+    gap: 40px;
+    width: 40%;
+    margin-left: auto; /*das div wird ganz links plaziert*/
+    align-items: center; /* Zentriere den Inhalt vertikal */
+    justify-content: space-around; /*links bekommen alle den gleichen abstand*/
+}
+
+.menu-punkte a {
+    display: inline-block; /* Stelle sicher, dass die Links nebeneinander stehen */
+    margin: 0 10px; /* Füge horizontalen Abstand zwischen den Links hinzu */
+}
+
+
+@media (max-width: 600px) {/* kleine Smartphones */
+    .nav-bar {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-punkte {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1027px) {
+    .nav-bar {
+        width: 70%;
+    }
+
+    .menu-punkte {
+        font-size: 20px; /* Anpassung der Schriftgröße für mittlere Bildschirme */
+    }
+}
+
+@media (min-width: 1028px) {
+    #nav-bar-logo {
+        width: 35%;
+        height: auto;
+    }
+}
