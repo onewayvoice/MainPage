@@ -394,7 +394,27 @@ footer {
 
 @media (min-width: 1024px) {
     body {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .breadcrumb a {
+        font-size: 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 23px;
+    }
+
+    .footer-content p {
+        font-size: 18px;
+    }
+
+    .footer-content a {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        font-size: 18px;
     }
 
     .bild-container img {

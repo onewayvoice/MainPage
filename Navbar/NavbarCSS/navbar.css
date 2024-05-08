@@ -73,5 +73,15 @@
 }
 
 @media (min-width: 1024px) {
+    .menu-punkte a {
+        font-size: 18px;
+        text-decoration: none;
+    }
 
+    .container {
+        display: flex;
+        width: 90%;
+        gap: 30px;
+        justify-content: space-around;
+    }
 }
